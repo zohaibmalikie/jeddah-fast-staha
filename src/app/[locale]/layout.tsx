@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { StickyMobileCTA } from "@/components/layout/StickyMobileCTA";
 import { SEOJsonLd } from "@/components/seo/SEOJsonLd";
 import { isLocale, localeDir, locales, type Locale } from "@/lib/site";
-import { localBusinessSchema, organizationSchema } from "@/lib/schema";
+import { localBusinessSchema, organizationSchema, websiteSchema } from "@/lib/schema";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -28,6 +28,7 @@ export default async function LocaleLayout({
       <body>
         <SEOJsonLd data={organizationSchema(current)} />
         <SEOJsonLd data={localBusinessSchema(current)} />
+        <SEOJsonLd data={websiteSchema(current)} />
         <Header locale={current} />
         <main>{children}</main>
         <Footer locale={current} />

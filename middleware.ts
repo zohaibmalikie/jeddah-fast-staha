@@ -20,8 +20,7 @@ function detectLocale(acceptLanguage: string | null) {
 }
 
 export function middleware(request: NextRequest) {
-  const locale = detectLocale(request.headers.get("accept-language"));
-  return NextResponse.redirect(new URL(`/${locale}`, request.url));
+  return NextResponse.redirect(new URL(`/${detectLocale(request.headers.get("accept-language"))}`, request.url));
 }
 
 export const config = {

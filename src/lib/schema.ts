@@ -17,6 +17,7 @@ export function organizationSchema(locale: Locale) {
       contactType: "customer service",
       availableLanguage: ["Arabic", "English", "Urdu"],
     },
+    sameAs: [site.whatsapp],
   };
 }
 
@@ -32,10 +33,46 @@ export function localBusinessSchema(locale: Locale) {
     areaServed: areas.map((area) => areaTitle(area, currentLocale)),
     openingHours: "Mo-Su 00:00-23:59",
     priceRange: "$$",
+    serviceType: "Regular flatbed car transport",
+    knowsLanguage: ["ar", "en", "ur"],
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 21.4858,
+      longitude: 39.1925,
+    },
     address: {
       "@type": "PostalAddress",
       addressLocality: "Jeddah",
+      addressRegion: "Makkah Province",
       addressCountry: "SA",
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Car towing and flatbed transport services",
+      itemListElement: services.map((service) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: service.title[currentLocale],
+          description: service.description[currentLocale],
+        },
+      })),
+    },
+  };
+}
+
+export function websiteSchema(locale: Locale) {
+  const currentLocale = toLocale(locale);
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: site.name[currentLocale],
+    url: site.url,
+    inLanguage: ["ar", "en", "ur"],
+    potentialAction: {
+      "@type": "CommunicateAction",
+      target: site.whatsappMessage,
+      name: "Request car towing service",
     },
   };
 }
@@ -94,7 +131,7 @@ export function blogPostingSchema(input: {
     datePublished: input.datePublished,
     image: input.image,
     url: input.url,
-    author: { "@type": "Organization", name: "سطحة جدة السريعة" },
-    publisher: { "@type": "Organization", name: "سطحة جدة السريعة" },
+    author: { "@type": "Organization", name: site.name.en },
+    publisher: { "@type": "Organization", name: site.name.en },
   };
 }

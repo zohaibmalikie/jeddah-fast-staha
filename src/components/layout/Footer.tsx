@@ -25,6 +25,7 @@ export function Footer({ locale }: { locale: Locale }) {
               {routeLabels[locale][item]}
             </Link>
           ))}
+          <Link href="/sitemap.html">Sitemap</Link>
         </div>
         <div>
           <h3>{routeLabels[locale].services}</h3>

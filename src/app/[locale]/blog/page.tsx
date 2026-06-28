@@ -25,13 +25,13 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: L
       <PageHero locale={locale} title={copy[locale][0]} text={copy[locale][1]} crumbs={[{ label: copy[locale][0], href: `/${locale}/blog` }]} />
       <section className="section">
         <div className="container blog-layout">
-          <div>
+          <div className="blog-main">
             <p className="eyebrow">{ui[locale].featured}</p>
             <BlogCard post={posts[0]} locale={locale} />
             <div style={{ height: 24 }} />
             <BlogFilters locale={locale} />
           </div>
-          <aside className="card">
+          <aside className="card blog-sidebar">
             <h2>{ui[locale].recent}</h2>
             {posts.slice(1).map((post) => (
               <p key={post.slug}><a className="text-link" href={`/${locale}/blog/${post.slug}`}>{post.title[locale]}</a></p>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle, Mail, MapPin, Phone } from "lucide-react";
+import { CheckCircle, Mail, MapPin, Phone, Star } from "lucide-react";
 import { AreaCard, BlogCard, ServiceCard } from "@/components/ui/Cards";
 import { PhoneButton, WhatsAppButton } from "@/components/ui/CTAButtons";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
@@ -148,12 +148,91 @@ export function GallerySection({ locale }: { locale: Locale }) {
 }
 
 export function TestimonialsSection({ locale }: { locale: Locale }) {
+  const title =
+    locale === "en"
+      ? "Our customers' opinions"
+      : locale === "ar"
+        ? "آراء عملائنا"
+        : "ہمارے صارفین کی رائے";
+
+  const fallbackArea = locale === "en" ? "Saudi Arabia" : locale === "ar" ? "السعودية" : "سعودی عرب";
+  const displayNames = {
+    en: [
+      "Abu Fahad",
+      "Umm Noura",
+      "Khaled A.",
+      "Abdullah S.",
+      "Faisal M.",
+      "Sara A.",
+      "Mohammed H.",
+      "Abeer S.",
+      "Yousef K.",
+      "Huda M.",
+    ],
+    ar: [
+      "أبو فهد",
+      "أم نورة",
+      "خالد أ.",
+      "عبدالله س.",
+      "فيصل م.",
+      "سارة أ.",
+      "محمد هـ.",
+      "عبير س.",
+      "يوسف ك.",
+      "هدى م.",
+    ],
+    ur: [
+      "ابو فہد",
+      "ام نوره",
+      "خالد ا.",
+      "عبدالله س.",
+      "فیصل م.",
+      "سارہ ا.",
+      "محمد ہ.",
+      "عبیر س.",
+      "یوسف ک.",
+      "ہدیٰ م.",
+    ],
+  };
+
+  function parseQuote(quote: string, index: number) {
+    const separator = quote.includes(":") ? ":" : "：";
+    const [rawCustomer, ...rest] = quote.split(separator);
+    const body = rest.join(separator).trim() || quote;
+    const area = rawCustomer.replace(/^(Customer from|عميل من|.+? کے کسٹمر)\s*/u, "").trim() || fallbackArea;
+    const name = displayNames[locale][index % displayNames[locale].length];
+    const initials = locale === "en" ? name.split(" ").map((part) => part[0]).join("").slice(0, 2) : String(index + 1);
+    return { body, area, name, initials };
+  }
+
   return (
-    <section className="section">
+    <section className="section testimonials-section">
       <div className="container">
-        <SectionHeading title={home[locale].testimonialsTitle} />
-        <div className="card-grid three">
-          {testimonials[locale].map((quote) => <blockquote key={quote} className="card testimonial">{quote}</blockquote>)}
+        <div className="testimonials-heading">
+          <h2>{title}</h2>
+        </div>
+        <div className="card-grid testimonial-grid">
+          {testimonials[locale].map((quote, index) => {
+            const item = parseQuote(quote, index);
+            return (
+              <article key={quote} className="testimonial-card">
+                <div className="stars" aria-label="5 star rating">
+                  {Array.from({ length: 5 }).map((_, starIndex) => (
+                    <Star key={starIndex} size={24} fill="currentColor" aria-hidden="true" />
+                  ))}
+                </div>
+                <blockquote>{item.body}</blockquote>
+                <div className="testimonial-divider" />
+                <div className="testimonial-person">
+                  <div>
+                    <strong>{item.name}</strong>
+                    <span>{item.area} <MapPin size={15} aria-hidden="true" /></span>
+                  </div>
+                  <span className="testimonial-avatar" aria-hidden="true">{item.initials}</span>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

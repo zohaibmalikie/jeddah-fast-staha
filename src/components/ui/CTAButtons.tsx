@@ -11,7 +11,7 @@ type Props = {
 
 export function PhoneButton({ locale, compact, className }: Props) {
   return (
-    <a className={cn("btn btn-primary", className)} href={site.phoneHref}>
+    <a className={cn("btn btn-primary", className)} href={site.phoneHref} aria-label={`${ui[locale].call} ${site.phoneDisplay}`}>
       <Phone size={18} aria-hidden="true" />
       <span>{compact ? site.phoneDisplay : ui[locale].call}</span>
     </a>
@@ -20,7 +20,7 @@ export function PhoneButton({ locale, compact, className }: Props) {
 
 export function WhatsAppButton({ locale, compact, className }: Props) {
   return (
-    <a className={cn("btn btn-whatsapp", className)} href={site.whatsappMessage} target="_blank" rel="noreferrer">
+    <a className={cn("btn btn-whatsapp", className)} href={site.whatsappMessage} target="_blank" rel="noreferrer" aria-label={ui[locale].whatsapp}>
       <MessageCircle size={18} aria-hidden="true" />
       <span>{compact ? "WhatsApp" : ui[locale].whatsapp}</span>
     </a>
@@ -29,7 +29,7 @@ export function WhatsAppButton({ locale, compact, className }: Props) {
 
 export function EmailButton({ locale, className }: Props) {
   return (
-    <a className={cn("btn btn-ghost", className)} href={site.emailHref}>
+    <a className={cn("btn btn-ghost", className)} href={site.emailHref} aria-label={`${ui[locale].email} ${site.email}`}>
       <Mail size={18} aria-hidden="true" />
       <span>{ui[locale].email}</span>
     </a>

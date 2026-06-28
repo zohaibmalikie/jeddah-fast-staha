@@ -1,8 +1,8 @@
 export const site = {
   name: {
-    ar: "سطحة جدة السريعة",
-    en: "Jeddah Fast Staha",
-    ur: "جدہ فاسٹ سطحة",
+    ar: "Satha Express",
+    en: "Satha Express",
+    ur: "Satha Express",
   },
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://staha-jeddah.com",
   phoneDisplay: "0593057492",

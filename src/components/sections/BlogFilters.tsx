@@ -18,7 +18,8 @@ export function BlogFilters({ locale }: { locale: Locale }) {
   return (
     <>
       <div className="blog-tools">
-        <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder={ui[locale].search} />
+        <label className="sr-only" htmlFor="blog-search">{ui[locale].search}</label>
+        <input id="blog-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={ui[locale].search} />
         <button type="button" onClick={() => setCategory("all")}>{ui[locale].all}</button>
         {categories.map((item) => (
           <button key={item} type="button" onClick={() => setCategory(item)}>{item}</button>
