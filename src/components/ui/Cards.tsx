@@ -30,7 +30,13 @@ export function AreaCard({ slug, title, locale }: { slug: string; title: string;
 export function BlogCard({ post, locale }: { post: (typeof posts)[number]; locale: Locale }) {
   return (
     <article className="card blog-card">
-      <Image src={post.image} alt={post.title[locale]} width={640} height={420} />
+      <Image
+        src={post.image}
+        alt={post.title[locale]}
+        width={640}
+        height={420}
+        sizes="(max-width: 720px) 100vw, (max-width: 980px) 50vw, 33vw"
+      />
       <div>
         <p className="eyebrow">{post.category[locale]}</p>
         <h3>{post.title[locale]}</h3>

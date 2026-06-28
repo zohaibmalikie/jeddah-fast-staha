@@ -33,7 +33,15 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ loc
       <PageHero locale={locale} title={post.title[locale]} text={post.excerpt[locale]} crumbs={[{ label: locale === "en" ? "Blog" : locale === "ar" ? "المدونة" : "بلاگ", href: `/${locale}/blog` }, { label: post.title[locale], href: `/${locale}/blog/${slug}` }]} />
       <section className="section">
         <div className="container narrow">
-          <Image className="article-hero-image" src={post.image} alt={post.title[locale]} width={1100} height={620} priority />
+          <Image
+            className="article-hero-image"
+            src={post.image}
+            alt={post.title[locale]}
+            width={1100}
+            height={620}
+            priority
+            sizes="(max-width: 900px) 100vw, 840px"
+          />
           <article className="article-body">
             <p className="meta">{post.date} · {post.readTime} min · {post.category[locale]}</p>
             <p>{post.excerpt[locale]}</p>

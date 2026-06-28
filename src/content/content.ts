@@ -2,22 +2,14 @@ import { Car, Clock, MapPin, MessageCircle, Shield, Sparkles, Truck, Wrench } fr
 import { Locale } from "@/lib/site";
 
 export const images = {
-  hero:
-    "https://images.unsplash.com/photo-1742069028920-c2acf52aaa9e?w=1400&h=1000&fit=crop&auto=format",
-  truck:
-    "https://images.unsplash.com/photo-1742069029207-0aacf8fa4401?w=1200&h=800&fit=crop&auto=format",
-  roadside:
-    "https://images.unsplash.com/photo-1601508836900-ee2aa7840a7b?w=1200&h=800&fit=crop&auto=format",
-  city:
-    "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?w=1200&h=800&fit=crop&auto=format",
-  road:
-    "https://images.unsplash.com/photo-1484536831193-ff11d0792d3d?w=1200&h=800&fit=crop&auto=format",
-  workshop:
-    "https://images.unsplash.com/photo-1632823471565-1ecdf5c2f342?w=1200&h=800&fit=crop&auto=format",
-  highway:
-    "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200&h=800&fit=crop&auto=format",
-  phoneMap:
-    "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&h=800&fit=crop&auto=format",
+  hero: "/images/hero-flatbed.webp",
+  truck: "/images/red-flatbed.webp",
+  roadside: "/images/roadside-service.webp",
+  city: "/images/jeddah-city.webp",
+  road: "/images/safe-road.webp",
+  workshop: "/images/red-flatbed.webp",
+  highway: "/images/safe-road.webp",
+  phoneMap: "/images/hero-flatbed.webp",
 };
 
 export const ui = {
@@ -511,6 +503,378 @@ export const posts = [
         { heading: "پک اپ سے پہلے گاڑی تیار کریں", paragraphs: ["سطحة آنے سے پہلے گاڑی سے ضروری سامان نکالیں اور اگر گاڑی خراب یا حادثہ زدہ ہے تو تصاویر لے لیں۔ یہ آسان مگر فائدہ مند قدم ہے۔", "اگر گاڑی تنگ پارکنگ میں ہے تو ڈرائیور کو پہلے بتائیں تاکہ پہنچنے کا بہتر راستہ طے ہو سکے۔"] },
         { heading: "واضح لوکیشن بھیجیں", paragraphs: ["واٹس ایپ لوکیشن ڈرائیور کو جلد پہنچنے میں مدد دیتی ہے۔ اگر آپ البلد، السلامہ یا المروہ جیسے مصروف علاقے میں ہیں تو قریبی نشان بھی بتائیں۔", "سطحة جدہ یا سطحة مکہ کے لیے واضح پک اپ اور ڈراپ آف معلومات بکنگ کو تیز بناتی ہیں۔"] },
         { heading: "قیمت اور منزل کنفرم کریں", paragraphs: ["روانگی سے پہلے قیمت، آخری منزل، ورکشاپ کا نام یا پتہ کنفرم کریں۔ اس سے فلیٹ بیڈ گاڑی منتقلی منظم رہتی ہے۔"] },
+      ],
+    },
+  },
+  {
+    slug: "staha-north-jeddah-guide",
+    image: images.truck,
+    category: { ar: "مناطق جدة", en: "Jeddah Areas", ur: "جدہ علاقے" },
+    title: {
+      ar: "سطحة شمال جدة: متى تحتاجها وكيف تطلبها بسرعة؟",
+      en: "North Jeddah Car Towing: When You Need It and How to Book",
+      ur: "شمالی جدہ سطحة: کب چاہیے اور کیسے بک کریں؟",
+    },
+    excerpt: {
+      ar: "دليل عملي لطلب سطحة في شمال جدة وأحياء أبحر والحمدانية والمناطق القريبة.",
+      en: "A practical guide to booking car towing in North Jeddah, Obhur, Al Hamdaniyah, and nearby districts.",
+      ur: "شمالی جدہ، ابحر، الحمدانیہ اور قریبی علاقوں میں سطحة بک کرنے کا عملی گائیڈ۔",
+    },
+    date: "2026-02-20",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "متى تطلب سطحة شمال جدة؟", paragraphs: ["إذا تعطلت السيارة في أبحر، الحمدانية، طريق الملك، أو أي حي شمال جدة، فطلب سطحة قريبة من موقعك يوفر وقتاً ويقلل الضغط على السيارة.", "الأهم هو إرسال الموقع بدقة عبر واتساب مع تحديد الوجهة، سواء كانت ورشة أو منزل أو معرض سيارات."] },
+        { heading: "كلمات بحث مفيدة للسائقين", paragraphs: ["كثير من العملاء يبحثون عن سطحة شمال جدة أو رقم سطحة جدة عند حدوث عطل مفاجئ. استخدم هذه الخدمة عندما تكون القيادة غير آمنة أو عندما تحتاج نقل السيارة لمسافة طويلة.", "تجهيز نوع السيارة وحالتها يساعد في تأكيد السعر ووقت الوصول بسرعة."] },
+      ],
+      en: [
+        { heading: "When should you request towing in North Jeddah?", paragraphs: ["If your car breaks down in Obhur, Al Hamdaniyah, King Road, or any North Jeddah district, nearby car towing saves time and avoids extra stress on the vehicle.", "Send your exact WhatsApp location and destination, whether it is a workshop, home, or showroom."] },
+        { heading: "Useful search terms for drivers", paragraphs: ["Many drivers search for North Jeddah towing or car towing Jeddah during sudden breakdowns. Use the service when driving is unsafe or the car needs a longer move.", "Preparing the car type and condition helps confirm price and arrival time quickly."] },
+      ],
+      ur: [
+        { heading: "شمالی جدہ میں سطحة کب طلب کریں؟", paragraphs: ["اگر گاڑی ابحر، الحمدانیہ، کنگ روڈ یا شمالی جدہ کے کسی علاقے میں خراب ہو جائے تو قریبی سطحة وقت بچاتی ہے اور گاڑی پر اضافی دباؤ نہیں پڑتا۔", "واٹس ایپ پر صحیح لوکیشن اور منزل بھیجیں، چاہے ورکشاپ، گھر یا شوروم ہو۔"] },
+        { heading: "ڈرائیورز کے لیے مفید سرچ الفاظ", paragraphs: ["بہت سے لوگ اچانک خرابی پر سطحة شمالی جدہ یا کار ٹوئنگ جدہ تلاش کرتے ہیں۔ جب گاڑی چلانا محفوظ نہ ہو تو سروس طلب کریں۔", "گاڑی کی قسم اور حالت بتانے سے قیمت اور وقت جلد واضح ہو جاتا ہے۔"] },
+      ],
+    },
+  },
+  {
+    slug: "staha-south-jeddah-guide",
+    image: images.roadside,
+    category: { ar: "مناطق جدة", en: "Jeddah Areas", ur: "جدہ علاقے" },
+    title: {
+      ar: "سطحة جنوب جدة لنقل السيارات المتعطلة والمصدومة",
+      en: "South Jeddah Towing for Breakdown and Accident Cars",
+      ur: "جنوبی جدہ میں خراب اور حادثہ زدہ گاڑی کی سطحة",
+    },
+    excerpt: {
+      ar: "متى تحتاج خدمة سطحة جنوب جدة وما المعلومات التي تسرع الوصول؟",
+      en: "When to request South Jeddah towing and what details help the driver arrive faster.",
+      ur: "جنوبی جدہ سطحة کب طلب کریں اور کون سی معلومات ڈرائیور کو جلد پہنچاتی ہیں۔",
+    },
+    date: "2026-02-27",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "خدمة عملية في جنوب جدة", paragraphs: ["جنوب جدة يضم طرقاً وأحياء مختلفة، وقد تحتاج سطحة عند تعطل السيارة أو عند نقلها إلى ورشة. إرسال الموقع والوجهة هو أسرع طريقة للتنسيق.", "إذا كانت السيارة مصدومة، أخبر السائق بحالتها قبل التحرك حتى يتم التعامل معها بحذر."] },
+        { heading: "كيف تختصر وقت الطلب؟", paragraphs: ["أرسل أقرب معلم، نوع السيارة، وهل السيارة تعمل أم لا. هذه التفاصيل تساعد في تحديد سطحة لنقل السيارات جدة بطريقة أوضح.", "لا تحاول قيادة السيارة إذا كان العطل يؤثر على الفرامل أو الإطارات أو نظام التوجيه."] },
+      ],
+      en: [
+        { heading: "Practical service in South Jeddah", paragraphs: ["South Jeddah includes many districts and road types, and you may need towing after a breakdown or to move a car to a workshop. Sending location and destination is the fastest way to coordinate.", "If the car has accident damage, tell the driver before dispatch so it can be handled carefully."] },
+        { heading: "How to reduce booking time", paragraphs: ["Send a nearby landmark, car type, and whether the vehicle can move. These details make Jeddah car transport clearer.", "Avoid driving if the issue affects brakes, tires, or steering."] },
+      ],
+      ur: [
+        { heading: "جنوبی جدہ میں عملی سروس", paragraphs: ["جنوبی جدہ میں مختلف علاقے اور راستے ہیں، خراب گاڑی یا ورکشاپ منتقلی کے لیے سطحة کی ضرورت پڑ سکتی ہے۔ لوکیشن اور منزل بھیجنا سب سے تیز طریقہ ہے۔", "اگر گاڑی حادثہ زدہ ہے تو ڈرائیور کو روانگی سے پہلے بتائیں تاکہ احتیاط سے ہینڈل کیا جائے۔"] },
+        { heading: "بکنگ وقت کیسے کم کریں؟", paragraphs: ["قریبی نشان، گاڑی کی قسم اور گاڑی چل سکتی ہے یا نہیں، یہ معلومات بھیجیں۔ اس سے جدہ کار ٹرانسپورٹ واضح ہوتی ہے۔", "اگر خرابی بریک، ٹائر یا اسٹیئرنگ سے متعلق ہے تو گاڑی نہ چلائیں۔"] },
+      ],
+    },
+  },
+  {
+    slug: "accident-car-towing-jeddah",
+    image: images.roadside,
+    category: { ar: "حوادث", en: "Accident Transport", ur: "حادثہ ٹرانسپورٹ" },
+    title: {
+      ar: "نقل سيارة مصدومة في جدة: خطوات مهمة قبل وصول السطحة",
+      en: "Accident Car Transport in Jeddah: Important Steps Before Pickup",
+      ur: "جدہ میں حادثہ زدہ گاڑی منتقلی: پک اپ سے پہلے اہم اقدامات",
+    },
+    excerpt: {
+      ar: "ما الذي تفعله بعد حادث بسيط أو ضرر يمنع قيادة السيارة بأمان؟",
+      en: "What to do after a minor accident or damage that makes the car unsafe to drive.",
+      ur: "معمولی حادثے یا ایسی خرابی کے بعد کیا کریں جس سے گاڑی چلانا محفوظ نہ رہے۔",
+    },
+    date: "2026-03-05",
+    readTime: 6,
+    content: {
+      ar: [
+        { heading: "السلامة أولاً", paragraphs: ["بعد أي حادث، ابتعد عن مسار السيارات إذا كان ذلك ممكناً وشغل إشارات التنبيه. لا تحاول تحريك سيارة مصدومة إذا كان الضرر في الإطارات أو نظام التوجيه.", "اتصل أو أرسل واتساب مع موقعك وصور عامة لحالة السيارة إذا أمكن."] },
+        { heading: "معلومات تساعد في النقل", paragraphs: ["اذكر هل السيارة تتحرك أم لا، وهل تحتاج النقل إلى ورشة أو منزل. خدمة نقل السيارات المصدومة في جدة تعتمد على وضوح هذه التفاصيل.", "السعر ووقت الوصول يتحددان بعد معرفة موقع الاستلام والوجهة ونوع السيارة."] },
+      ],
+      en: [
+        { heading: "Safety first", paragraphs: ["After an accident, move away from traffic when possible and turn on hazard lights. Do not move an accident-damaged car if tires or steering are affected.", "Call or send WhatsApp with your location and general photos of the car condition when possible."] },
+        { heading: "Details that help transport", paragraphs: ["Mention whether the car can move and whether it should go to a workshop or home. Accident car transport in Jeddah depends on clear details.", "Price and arrival time are confirmed after pickup, destination, and car type are known."] },
+      ],
+      ur: [
+        { heading: "حفاظت پہلے", paragraphs: ["حادثے کے بعد ممکن ہو تو ٹریفک سے دور ہو جائیں اور ہیزرڈ لائٹس آن کریں۔ اگر ٹائر یا اسٹیئرنگ متاثر ہیں تو گاڑی حرکت نہ دیں۔", "کال کریں یا واٹس ایپ پر لوکیشن اور گاڑی کی عمومی تصاویر بھیجیں۔"] },
+        { heading: "منتقلی میں مدد دینے والی معلومات", paragraphs: ["بتائیں گاڑی چل سکتی ہے یا نہیں، اور ورکشاپ یا گھر کہاں لے جانی ہے۔ جدہ میں حادثہ زدہ گاڑی کی منتقلی واضح معلومات پر آسان ہوتی ہے۔", "قیمت اور آمد کا وقت پک اپ، منزل اور گاڑی کی قسم کے بعد کنفرم ہوتا ہے۔"] },
+      ],
+    },
+  },
+  {
+    slug: "roadside-pickup-jeddah-makkah",
+    image: images.road,
+    category: { ar: "مساعدة الطريق", en: "Roadside Pickup", ur: "روڈ سائیڈ پک اپ" },
+    title: {
+      ar: "استلام سيارة من الطريق بين جدة ومكة",
+      en: "Roadside Car Pickup Between Jeddah and Makkah",
+      ur: "جدہ اور مکہ کے درمیان روڈ سائیڈ کار پک اپ",
+    },
+    excerpt: {
+      ar: "كيف تطلب استلام السيارة من طريق قريب وتحدد الموقع بدقة؟",
+      en: "How to request roadside pickup and share an accurate location.",
+      ur: "روڈ سائیڈ پک اپ کیسے طلب کریں اور صحیح لوکیشن کیسے بھیجیں۔",
+    },
+    date: "2026-03-12",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "تحديد الموقع بدقة", paragraphs: ["عند تعطل السيارة على الطريق بين جدة ومكة، أرسل الموقع عبر واتساب واذكر اتجاه الطريق وأقرب مخرج أو محطة. هذه التفاصيل مهمة جداً للوصول السريع.", "لا تقف بجانب السيارة إذا كان المكان غير آمن، وانتظر في نقطة بعيدة عن حركة المرور."] },
+        { heading: "ما الذي يحدد وقت الوصول؟", paragraphs: ["وقت الوصول يعتمد على موقعك، حالة الطريق، وتوفر السائق. لذلك فإن إرسال موقع واضح يساعد أكثر من وصف طويل غير دقيق.", "الخدمة مناسبة لنقل سيارة متعطلة أو سيارة لا يمكن قيادتها بأمان."] },
+      ],
+      en: [
+        { heading: "Sharing the exact location", paragraphs: ["If your car breaks down on a road between Jeddah and Makkah, share your WhatsApp location and mention road direction, nearest exit, or station. These details matter for fast arrival.", "Do not stand next to the car if the spot is unsafe. Wait away from moving traffic."] },
+        { heading: "What affects arrival time?", paragraphs: ["Arrival depends on your location, road condition, and driver availability. A clear map location helps more than a long unclear description.", "The service is suitable for broken down vehicles or cars that cannot be driven safely."] },
+      ],
+      ur: [
+        { heading: "صحیح لوکیشن بھیجنا", paragraphs: ["اگر جدہ اور مکہ کے راستے میں گاڑی خراب ہو جائے تو واٹس ایپ لوکیشن، راستے کی سمت، قریبی ایگزٹ یا اسٹیشن بتائیں۔ یہ معلومات فوری آمد کے لیے اہم ہیں۔", "اگر جگہ محفوظ نہیں تو گاڑی کے ساتھ نہ کھڑے ہوں، ٹریفک سے دور انتظار کریں۔"] },
+        { heading: "آمد کا وقت کس پر منحصر ہے؟", paragraphs: ["آمد کا وقت لوکیشن، روڈ کنڈیشن اور ڈرائیور کی دستیابی پر منحصر ہے۔ واضح میپ لوکیشن لمبی غیر واضح وضاحت سے بہتر ہے۔", "یہ سروس خراب یا غیر محفوظ گاڑی کی منتقلی کے لیے مناسب ہے۔"] },
+      ],
+    },
+  },
+  {
+    slug: "makkah-haram-area-car-towing",
+    image: images.city,
+    category: { ar: "مكة", en: "Makkah", ur: "مکہ" },
+    title: {
+      ar: "سطحة قرب الحرم في مكة: نصائح لتحديد نقطة الاستلام",
+      en: "Car Towing Near Makkah Haram Area: Pickup Location Tips",
+      ur: "مکہ حرم کے قریب سطحة: پک اپ لوکیشن کے مشورے",
+    },
+    excerpt: {
+      ar: "نصائح للتنسيق داخل المناطق المزدحمة في مكة وتحديد موقع استلام مناسب.",
+      en: "Tips for coordinating pickup in busy Makkah areas and choosing a clear pickup point.",
+      ur: "مکہ کے مصروف علاقوں میں پک اپ کوآرڈینیشن اور واضح جگہ منتخب کرنے کے مشورے۔",
+    },
+    date: "2026-03-19",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "اختيار نقطة استلام مناسبة", paragraphs: ["المناطق القريبة من الحرم قد تكون مزدحمة، لذلك من الأفضل اختيار نقطة استلام واضحة ومسموح الوقوف فيها. أرسل الموقع واذكر أقرب معلم أو بوابة أو شارع رئيسي.", "خدمة سطحة مكة تصبح أسرع عندما تكون نقطة الاستلام سهلة الوصول."] },
+        { heading: "ماذا ترسل قبل وصول السائق؟", paragraphs: ["أرسل نوع السيارة، حالة السيارة، والوجهة المطلوبة داخل مكة أو إلى جدة. إذا كنت تحتاج نقل سيارة من مكة إلى جدة، وضح وقت التحرك المناسب.", "تأكيد التفاصيل قبل الإرسال يقلل التأخير داخل المناطق المزدحمة."] },
+      ],
+      en: [
+        { heading: "Choosing a suitable pickup point", paragraphs: ["Areas near the Haram can be busy, so choose a clear pickup point where stopping is possible. Send the location and mention the nearest landmark, gate, or main street.", "Car towing in Makkah is faster when the pickup point is easy to reach."] },
+        { heading: "What to send before driver arrival", paragraphs: ["Send car type, vehicle condition, and destination inside Makkah or toward Jeddah. If you need Makkah to Jeddah car transport, confirm suitable timing.", "Confirming details early reduces delays in busy areas."] },
+      ],
+      ur: [
+        { heading: "مناسب پک اپ پوائنٹ منتخب کریں", paragraphs: ["حرم کے قریب علاقے مصروف ہو سکتے ہیں، اس لیے ایسی واضح جگہ منتخب کریں جہاں رکنا ممکن ہو۔ لوکیشن، قریبی نشان، گیٹ یا مین روڈ بتائیں۔", "مکہ میں سطحة اس وقت تیز ہوتی ہے جب پک اپ پوائنٹ آسان ہو۔"] },
+        { heading: "ڈرائیور آنے سے پہلے کیا بھیجیں؟", paragraphs: ["گاڑی کی قسم، حالت اور مکہ کے اندر یا جدہ کی طرف منزل بتائیں۔ اگر مکہ سے جدہ گاڑی منتقلی چاہیے تو مناسب وقت کنفرم کریں۔", "تفصیلات پہلے کنفرم کرنے سے مصروف علاقوں میں تاخیر کم ہوتی ہے۔"] },
+      ],
+    },
+  },
+  {
+    slug: "car-towing-al-safa-al-marwah-jeddah",
+    image: images.phoneMap,
+    category: { ar: "أحياء جدة", en: "Jeddah Districts", ur: "جدہ اضلاع" },
+    title: {
+      ar: "سطحة الصفا والمروة في جدة: خدمة قريبة للأحياء السكنية",
+      en: "Car Towing in Al Safa and Al Marwah Jeddah",
+      ur: "جدہ الصفا اور المروہ میں کار ٹوئنگ",
+    },
+    excerpt: {
+      ar: "كيف تطلب سطحة داخل أحياء الصفا والمروة والمناطق القريبة؟",
+      en: "How to request towing in Al Safa, Al Marwah, and nearby residential districts.",
+      ur: "الصفا، المروہ اور قریبی رہائشی علاقوں میں سطحة کیسے طلب کریں۔",
+    },
+    date: "2026-03-26",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "خدمة داخل الأحياء السكنية", paragraphs: ["أحياء الصفا والمروة تحتاج أحياناً إلى تنسيق دقيق بسبب المواقف والشوارع الداخلية. أرسل رقم المبنى أو أقرب مسجد أو متجر معروف بجانب الموقع.", "إذا كانت السيارة داخل موقف ضيق، أخبر السائق قبل الوصول حتى يتم ترتيب الاستلام بشكل أفضل."] },
+        { heading: "نقل إلى الورشة أو المنزل", paragraphs: ["يمكن نقل السيارة إلى ورشة قريبة أو إلى المنزل أو إلى أي وجهة داخل جدة. خدمة سطحة لنقل السيارات جدة تعتمد على وضوح الوجهة ونوع السيارة.", "التواصل عبر واتساب يجعل تأكيد الموقع والسعر أسرع."] },
+      ],
+      en: [
+        { heading: "Service inside residential districts", paragraphs: ["Al Safa and Al Marwah sometimes need careful coordination because of parking and inner streets. Send the building number or a nearby mosque or known store.", "If the car is in a tight parking spot, tell the driver before arrival so pickup can be planned better."] },
+        { heading: "Transport to workshop or home", paragraphs: ["The car can be moved to a nearby workshop, home, or any destination inside Jeddah. Jeddah car transport depends on clear destination and car type.", "WhatsApp communication makes location and price confirmation faster."] },
+      ],
+      ur: [
+        { heading: "رہائشی علاقوں کے اندر سروس", paragraphs: ["الصفا اور المروہ میں پارکنگ اور اندرونی گلیوں کی وجہ سے درست رابطہ ضروری ہوتا ہے۔ بلڈنگ نمبر، قریبی مسجد یا معروف دکان بتائیں۔", "اگر گاڑی تنگ پارکنگ میں ہے تو ڈرائیور کو پہلے بتائیں تاکہ پک اپ بہتر ہو سکے۔"] },
+        { heading: "ورکشاپ یا گھر تک منتقلی", paragraphs: ["گاڑی قریبی ورکشاپ، گھر یا جدہ کے اندر کسی بھی منزل تک منتقل کی جا سکتی ہے۔ جدہ کار ٹرانسپورٹ کے لیے منزل اور گاڑی کی قسم واضح ہونی چاہیے۔", "واٹس ایپ رابطہ لوکیشن اور قیمت جلد کنفرم کرتا ہے۔"] },
+      ],
+    },
+  },
+  {
+    slug: "towing-luxury-cars-jeddah",
+    image: images.truck,
+    category: { ar: "نقل آمن", en: "Safe Transport", ur: "محفوظ منتقلی" },
+    title: {
+      ar: "نقل السيارات الفاخرة بالسطحة في جدة ومكة",
+      en: "Transporting Luxury Cars by Flatbed in Jeddah and Makkah",
+      ur: "جدہ اور مکہ میں لگژری گاڑیوں کی فلیٹ بیڈ منتقلی",
+    },
+    excerpt: {
+      ar: "نصائح مهمة عند نقل سيارة فاخرة أو رياضية داخل جدة أو بين جدة ومكة.",
+      en: "Important tips for moving a luxury or sports car in Jeddah or between Jeddah and Makkah.",
+      ur: "جدہ یا جدہ مکہ کے درمیان لگژری یا اسپورٹس گاڑی منتقل کرنے کے اہم مشورے۔",
+    },
+    date: "2026-04-02",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "العناية قبل التحميل", paragraphs: ["السيارات الفاخرة تحتاج تواصلاً واضحاً قبل النقل. أرسل صوراً عامة للسيارة وحدد إذا كانت منخفضة أو تحتاج حذراً إضافياً أثناء التحميل.", "تأكيد الوجهة والسعر قبل التحرك يجعل نقل السيارة أكثر هدوءاً وتنظيماً."] },
+        { heading: "متى تستخدم السطحة؟", paragraphs: ["استخدم سطحة لنقل السيارات إذا كانت القيادة قد تسبب ضرراً أو إذا كان النقل بين جدة ومكة لمسافة طويلة. الهدف هو تقليل المخاطر على السيارة.", "لا تضف أي أغراض ثمينة داخل السيارة قبل النقل."] },
+      ],
+      en: [
+        { heading: "Care before loading", paragraphs: ["Luxury cars need clear communication before transport. Send general photos and mention if the car is low or needs extra care during loading.", "Confirming destination and price before dispatch keeps the move organized."] },
+        { heading: "When should you use a flatbed?", paragraphs: ["Use flatbed car transport if driving may cause damage or if the move between Jeddah and Makkah is long. The goal is to reduce vehicle risk.", "Do not leave valuable items inside the car before transport."] },
+      ],
+      ur: [
+        { heading: "لوڈنگ سے پہلے احتیاط", paragraphs: ["لگژری گاڑیوں کے لیے منتقلی سے پہلے واضح رابطہ ضروری ہے۔ گاڑی کی عمومی تصاویر بھیجیں اور بتائیں اگر گاڑی نیچی ہے یا اضافی احتیاط چاہیے۔", "روانگی سے پہلے منزل اور قیمت کنفرم کرنا منتقلی کو منظم بناتا ہے۔"] },
+        { heading: "فلیٹ بیڈ کب استعمال کریں؟", paragraphs: ["اگر گاڑی چلانے سے نقصان ہو سکتا ہے یا جدہ اور مکہ کے درمیان لمبا فاصلہ ہے تو فلیٹ بیڈ کار ٹرانسپورٹ بہتر ہے۔ مقصد گاڑی کا خطرہ کم کرنا ہے۔", "منتقلی سے پہلے قیمتی سامان گاڑی میں نہ چھوڑیں۔"] },
+      ],
+    },
+  },
+  {
+    slug: "workshop-car-transport-jeddah",
+    image: images.roadside,
+    category: { ar: "ورش", en: "Workshop Transport", ur: "ورکشاپ منتقلی" },
+    title: {
+      ar: "نقل السيارة إلى الورشة في جدة: متى يكون أفضل من القيادة؟",
+      en: "Moving a Car to a Workshop in Jeddah: When Towing Is Better",
+      ur: "جدہ میں گاڑی ورکشاپ لے جانا: سطحة کب بہتر ہے؟",
+    },
+    excerpt: {
+      ar: "حالات يكون فيها نقل السيارة بالسطحة أكثر أماناً من قيادتها إلى الورشة.",
+      en: "Situations where flatbed transport is safer than driving the car to a workshop.",
+      ur: "وہ حالات جہاں گاڑی کو ورکشاپ تک چلانے کے بجائے سطحة بہتر ہے۔",
+    },
+    date: "2026-04-09",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "لا تقود السيارة في هذه الحالات", paragraphs: ["إذا كان العطل في الفرامل أو حرارة المحرك أو الإطارات أو نظام التوجيه، فقيادة السيارة إلى الورشة قد تزيد الضرر. اطلب سطحة لنقل السيارة بأمان.", "حتى لو كانت الورشة قريبة، السلامة أهم من اختصار المسافة."] },
+        { heading: "ما الذي يحتاجه السائق؟", paragraphs: ["أرسل اسم الورشة، موقعها، وموقع السيارة الحالي. إذا كان هناك موعد مع الورشة، اذكر الوقت حتى يتم ترتيب النقل.", "هذه التفاصيل تجعل نقل سيارات جدة إلى الورشة أسرع وأكثر وضوحاً."] },
+      ],
+      en: [
+        { heading: "Do not drive in these cases", paragraphs: ["If the issue involves brakes, engine overheating, tires, or steering, driving to the workshop can cause more damage. Request flatbed transport instead.", "Even if the workshop is near, safety matters more than saving a short distance."] },
+        { heading: "What does the driver need?", paragraphs: ["Send the workshop name, its location, and the current car location. If there is a workshop appointment, mention the time.", "These details make Jeddah workshop car transport faster and clearer."] },
+      ],
+      ur: [
+        { heading: "ان حالات میں گاڑی نہ چلائیں", paragraphs: ["اگر خرابی بریک، انجن ہیٹ، ٹائر یا اسٹیئرنگ سے متعلق ہے تو ورکشاپ تک گاڑی چلانا مزید نقصان کر سکتا ہے۔ فلیٹ بیڈ منتقلی طلب کریں۔", "ورکشاپ قریب بھی ہو تو حفاظت زیادہ اہم ہے۔"] },
+        { heading: "ڈرائیور کو کیا چاہیے؟", paragraphs: ["ورکشاپ کا نام، لوکیشن اور گاڑی کی موجودہ جگہ بھیجیں۔ اگر ورکشاپ اپائنٹمنٹ ہے تو وقت بھی بتائیں۔", "یہ معلومات جدہ میں ورکشاپ کار ٹرانسپورٹ کو تیز اور واضح بناتی ہیں۔"] },
+      ],
+    },
+  },
+  {
+    slug: "airport-road-car-towing-jeddah",
+    image: images.road,
+    category: { ar: "طرق جدة", en: "Jeddah Roads", ur: "جدہ روڈز" },
+    title: {
+      ar: "سطحة طريق المطار جدة: ماذا تفعل عند تعطل السيارة؟",
+      en: "Airport Road Jeddah Towing: What to Do After a Breakdown",
+      ur: "ایئرپورٹ روڈ جدہ سطحة: گاڑی خراب ہو تو کیا کریں؟",
+    },
+    excerpt: {
+      ar: "خطوات سريعة إذا تعطلت السيارة على طريق المطار أو الطرق القريبة في جدة.",
+      en: "Quick steps if your car breaks down on Airport Road or nearby Jeddah roads.",
+      ur: "ایئرپورٹ روڈ یا قریبی جدہ راستوں پر گاڑی خراب ہو جائے تو فوری اقدامات۔",
+    },
+    date: "2026-04-16",
+    readTime: 4,
+    content: {
+      ar: [
+        { heading: "ابق في مكان آمن", paragraphs: ["طريق المطار في جدة قد يكون مزدحماً، لذلك حاول التوقف في مكان آمن وشغل إشارات التنبيه. لا تنتظر في مسار السيارات.", "أرسل اللوكيشن عبر واتساب مع اتجاه الطريق وأقرب مخرج أو معلم واضح."] },
+        { heading: "لماذا الموقع مهم؟", paragraphs: ["تحديد الموقع بدقة يساعد سائق السطحة على الوصول للمسار الصحيح، خصوصاً على الطرق الكبيرة التي لها اتجاهات متعددة.", "اذكر الوجهة المطلوبة، سواء ورشة أو منزل أو نقل إلى منطقة أخرى."] },
+      ],
+      en: [
+        { heading: "Stay in a safe place", paragraphs: ["Airport Road in Jeddah can be busy, so stop safely and turn on hazard lights. Do not wait in a traffic lane.", "Send WhatsApp location with road direction and nearest exit or landmark."] },
+        { heading: "Why location matters", paragraphs: ["Accurate location helps the towing driver reach the correct side of the road, especially on larger roads with multiple directions.", "Mention the destination, whether workshop, home, or another district."] },
+      ],
+      ur: [
+        { heading: "محفوظ جگہ پر رہیں", paragraphs: ["جدہ ایئرپورٹ روڈ مصروف ہو سکتی ہے، اس لیے محفوظ جگہ رکیں اور ہیزرڈ لائٹس آن کریں۔ ٹریفک لین میں انتظار نہ کریں۔", "واٹس ایپ لوکیشن، روڈ کی سمت اور قریبی ایگزٹ یا نشان بھیجیں۔"] },
+        { heading: "لوکیشن کیوں اہم ہے؟", paragraphs: ["درست لوکیشن ڈرائیور کو صحیح سائیڈ پر پہنچنے میں مدد دیتی ہے، خاص طور پر بڑے راستوں پر۔", "منزل بتائیں، چاہے ورکشاپ، گھر یا کوئی دوسرا علاقہ ہو۔"] },
+      ],
+    },
+  },
+  {
+    slug: "whatsapp-staha-booking-guide",
+    image: images.phoneMap,
+    category: { ar: "واتساب", en: "WhatsApp Booking", ur: "واٹس ایپ بکنگ" },
+    title: {
+      ar: "طريقة طلب سطحة عبر واتساب في جدة ومكة",
+      en: "How to Book Car Towing by WhatsApp in Jeddah and Makkah",
+      ur: "جدہ اور مکہ میں واٹس ایپ سے سطحة کیسے بک کریں",
+    },
+    excerpt: {
+      ar: "رسالة جاهزة ومعلومات مهمة لإرسالها عند طلب سطحة عبر واتساب.",
+      en: "A simple message format and important details to send when booking by WhatsApp.",
+      ur: "واٹس ایپ بکنگ کے لیے آسان پیغام اور اہم معلومات۔",
+    },
+    date: "2026-04-23",
+    readTime: 4,
+    content: {
+      ar: [
+        { heading: "ماذا تكتب في الرسالة؟", paragraphs: ["اكتب: أحتاج سطحة، هذا موقعي، وهذه الوجهة، ونوع السيارة كذا. أضف هل السيارة تعمل أو لا، وهل هي مصدومة.", "هذه الرسالة المختصرة تساعد في الرد السريع وتأكيد السعر بوضوح."] },
+        { heading: "لماذا واتساب مفيد؟", paragraphs: ["واتساب يسمح بإرسال الموقع والصور والوجهة في نفس المحادثة. هذا يجعله مناسباً لطلب سطحة قريبة مني جدة أو سطحة قريبة مني مكة.", "كلما كانت الرسالة أوضح، أصبح التنسيق أسرع."] },
+      ],
+      en: [
+        { heading: "What should the message say?", paragraphs: ["Write: I need car towing, this is my location, this is the destination, and this is the car type. Add whether the car can move or has accident damage.", "This short message helps with fast replies and clear pricing."] },
+        { heading: "Why WhatsApp helps", paragraphs: ["WhatsApp lets you send location, photos, and destination in one chat. It is useful when searching for nearby towing in Jeddah or Makkah.", "The clearer the message, the faster the coordination."] },
+      ],
+      ur: [
+        { heading: "پیغام میں کیا لکھیں؟", paragraphs: ["لکھیں: مجھے سطحة چاہیے، یہ میری لوکیشن ہے، یہ منزل ہے، اور گاڑی کی قسم یہ ہے۔ یہ بھی بتائیں گاڑی چل سکتی ہے یا حادثہ زدہ ہے۔", "یہ مختصر پیغام تیز جواب اور واضح قیمت میں مدد دیتا ہے۔"] },
+        { heading: "واٹس ایپ کیوں مفید ہے؟", paragraphs: ["واٹس ایپ پر لوکیشن، تصاویر اور منزل ایک ہی چیٹ میں بھیجی جا سکتی ہیں۔ یہ جدہ یا مکہ میں قریبی سطحة کے لیے مفید ہے۔", "پیغام جتنا واضح ہو گا، رابطہ اتنا تیز ہو گا۔"] },
+      ],
+    },
+  },
+  {
+    slug: "night-car-towing-jeddah-makkah",
+    image: images.road,
+    category: { ar: "طوارئ", en: "Emergency", ur: "ایمرجنسی" },
+    title: {
+      ar: "سطحة ليلية في جدة ومكة: نصائح عند تعطل السيارة ليلاً",
+      en: "Night Car Towing in Jeddah and Makkah: Safety Tips",
+      ur: "جدہ اور مکہ میں رات کی سطحة: حفاظتی مشورے",
+    },
+    excerpt: {
+      ar: "كيف تتصرف عند تعطل السيارة ليلاً وتحتاج نقل آمن وسريع؟",
+      en: "How to act when your car breaks down at night and you need safe transport.",
+      ur: "رات کو گاڑی خراب ہو جائے اور محفوظ منتقلی چاہیے تو کیا کریں۔",
+    },
+    date: "2026-04-30",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "السلامة في الليل", paragraphs: ["في الليل، الرؤية أقل والمخاطر أعلى. شغل إشارات التنبيه، وابق في مكان مضاء إذا أمكن، وأرسل موقعك الدقيق عبر واتساب.", "إذا كنت على طريق سريع، ابتعد عن السيارة وانتظر في مكان آمن."] },
+        { heading: "طلب الخدمة بسرعة", paragraphs: ["عند طلب سطحة ليلية، اذكر أقرب معلم واتجاه الطريق ونوع السيارة. هذه التفاصيل تساعد السائق على الوصول بشكل أسرع.", "الخدمة مناسبة للأعطال المفاجئة ونقل السيارات إلى المنزل أو الورشة."] },
+      ],
+      en: [
+        { heading: "Night safety", paragraphs: ["At night, visibility is lower and risk is higher. Turn on hazard lights, stay in a lit area when possible, and send your exact WhatsApp location.", "If you are on a highway, move away from the car and wait safely."] },
+        { heading: "Requesting service quickly", paragraphs: ["When booking night towing, mention the nearest landmark, road direction, and car type. These details help the driver arrive faster.", "The service is useful for sudden breakdowns and moving cars to home or workshop."] },
+      ],
+      ur: [
+        { heading: "رات کی حفاظت", paragraphs: ["رات کو روشنی کم اور خطرہ زیادہ ہوتا ہے۔ ہیزرڈ لائٹس آن کریں، ممکن ہو تو روشن جگہ رہیں، اور واٹس ایپ پر صحیح لوکیشن بھیجیں۔", "اگر ہائی وے پر ہیں تو گاڑی سے دور محفوظ جگہ انتظار کریں۔"] },
+        { heading: "جلدی سروس طلب کرنا", paragraphs: ["رات کی سطحة بک کرتے وقت قریبی نشان، روڈ کی سمت اور گاڑی کی قسم بتائیں۔ یہ معلومات ڈرائیور کو جلد پہنچاتی ہیں۔", "یہ سروس اچانک خرابی اور گاڑی کو گھر یا ورکشاپ لے جانے کے لیے مفید ہے۔"] },
+      ],
+    },
+  },
+  {
+    slug: "family-car-breakdown-makkah-road",
+    image: images.city,
+    category: { ar: "سلامة العائلة", en: "Family Safety", ur: "فیملی سیفٹی" },
+    title: {
+      ar: "تعطل سيارة العائلة على طريق مكة: ماذا تفعل؟",
+      en: "Family Car Breakdown on Makkah Road: What Should You Do?",
+      ur: "مکہ روڈ پر فیملی کار خراب ہو جائے تو کیا کریں؟",
+    },
+    excerpt: {
+      ar: "نصائح آمنة للعائلات عند تعطل السيارة على طريق مكة أو الطرق القريبة.",
+      en: "Safe tips for families when a car breaks down on Makkah Road or nearby routes.",
+      ur: "مکہ روڈ یا قریبی راستوں پر فیملی کار خراب ہو تو محفوظ مشورے۔",
+    },
+    date: "2026-05-07",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "حافظ على سلامة الركاب", paragraphs: ["إذا تعطلت سيارة العائلة، اجعل الركاب في مكان آمن بعيداً عن الطريق. شغل إشارات التنبيه ولا تقف خلف السيارة مباشرة.", "أرسل الموقع عبر واتساب وحدد عدد الركاب إذا كان ذلك مهماً للتنسيق."] },
+        { heading: "اختيار وجهة واضحة", paragraphs: ["حدد هل تريد نقل السيارة إلى المنزل أو الورشة أو مدينة أخرى. نقل سيارة من جدة إلى مكة أو العكس يحتاج وجهة دقيقة وسعراً واضحاً قبل التحرك.", "لا تحاول إصلاح السيارة على طريق مزدحم إذا لم يكن المكان آمناً."] },
+      ],
+      en: [
+        { heading: "Keep passengers safe", paragraphs: ["If a family car breaks down, keep passengers in a safe place away from the road. Turn on hazard lights and avoid standing directly behind the car.", "Send your WhatsApp location and mention passenger needs if coordination is required."] },
+        { heading: "Choose a clear destination", paragraphs: ["Decide whether the car should go home, to a workshop, or to another city. Jeddah to Makkah or Makkah to Jeddah car transport needs a clear destination and quote before dispatch.", "Do not try repairs on a busy road if the place is unsafe."] },
+      ],
+      ur: [
+        { heading: "مسافروں کی حفاظت کریں", paragraphs: ["اگر فیملی کار خراب ہو جائے تو مسافروں کو روڈ سے دور محفوظ جگہ رکھیں۔ ہیزرڈ لائٹس آن کریں اور گاڑی کے پیچھے کھڑے نہ ہوں۔", "واٹس ایپ لوکیشن بھیجیں اور اگر رابطے کے لیے ضروری ہو تو مسافروں کی ضرورت بتائیں۔"] },
+        { heading: "واضح منزل منتخب کریں", paragraphs: ["طے کریں گاڑی گھر، ورکشاپ یا دوسرے شہر لے جانی ہے۔ جدہ سے مکہ یا مکہ سے جدہ منتقلی کے لیے واضح منزل اور قیمت ضروری ہے۔", "مصروف روڈ پر جگہ محفوظ نہ ہو تو گاڑی ٹھیک کرنے کی کوشش نہ کریں۔"] },
       ],
     },
   },

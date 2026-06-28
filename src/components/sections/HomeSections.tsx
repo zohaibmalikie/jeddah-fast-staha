@@ -28,7 +28,14 @@ export function HeroSection({ locale }: { locale: Locale }) {
           </div>
         </div>
         <div className="hero-media">
-          <Image src={images.hero} alt={home[locale].heroTitle} width={900} height={700} priority />
+          <Image
+            src={images.hero}
+            alt={home[locale].heroTitle}
+            width={900}
+            height={700}
+            priority
+            sizes="(max-width: 980px) 100vw, 50vw"
+          />
           <div className="floating-contact">
             <strong>{site.phoneDisplay}</strong>
             <span>{ui[locale].whatsapp} · {site.location}</span>
@@ -69,7 +76,13 @@ export function CoverageSection({ locale }: { locale: Locale }) {
   return (
     <section className="section split-section">
       <div className="container split-grid">
-        <Image src={images.city} alt={home[locale].coverageTitle} width={760} height={520} />
+        <Image
+          src={images.city}
+          alt={home[locale].coverageTitle}
+          width={760}
+          height={520}
+          sizes="(max-width: 980px) 100vw, 45vw"
+        />
         <div>
           <SectionHeading title={home[locale].coverageTitle} text={home[locale].coverageText} />
           <div className="area-cloud">
@@ -119,7 +132,14 @@ export function GallerySection({ locale }: { locale: Locale }) {
         <SectionHeading title={home[locale].galleryTitle} />
         <div className="gallery-grid">
           {[images.truck, images.roadside, images.hero, images.city].map((src, index) => (
-            <Image key={src} src={src} alt={`${home[locale].galleryTitle} ${index + 1}`} width={700} height={480} />
+            <Image
+              key={src}
+              src={src}
+              alt={`${home[locale].galleryTitle} ${index + 1}`}
+              width={700}
+              height={525}
+              sizes="(max-width: 720px) 50vw, (max-width: 980px) 25vw, 25vw"
+            />
           ))}
         </div>
       </div>
