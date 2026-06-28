@@ -16,7 +16,7 @@ export const ui = {
   ar: {
     call: "اتصل الآن",
     whatsapp: "واتساب مباشر",
-    email: "البريد",
+    email: "البريد الإلكتروني",
     readMore: "اقرأ المزيد",
     viewAll: "عرض الكل",
     home: "الرئيسية",
@@ -44,7 +44,7 @@ export const ui = {
   ur: {
     call: "ابھی کال کریں",
     whatsapp: "واٹس ایپ",
-    email: "ای میل",
+    email: "ای میل کریں",
     readMore: "مزید پڑھیں",
     viewAll: "سب دیکھیں",
     home: "ہوم",

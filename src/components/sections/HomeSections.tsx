@@ -53,7 +53,7 @@ export function EmergencyStrip({ locale }: { locale: Locale }) {
         <strong>{home[locale].emergency}</strong>
         <div>
           <a href={site.phoneHref}><Phone size={17} />{site.phoneDisplay}</a>
-          <a href={site.whatsappMessage}><MapPin size={17} />WhatsApp</a>
+          <a href={site.whatsappMessage}><MapPin size={17} />{ui.en.whatsapp}</a>
           <a href={site.emailHref}><Mail size={17} />{site.email}</a>
         </div>
       </div>
