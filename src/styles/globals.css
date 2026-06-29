@@ -340,7 +340,7 @@ h3 { font-size: 1.15rem; }
 }
 
 .blog-card a {
-  display: block
+  display: block;
 }
 
 .view-all {
@@ -578,6 +578,23 @@ h3 { font-size: 1.15rem; }
   padding: 12px;
   color: var(--text);
   font: inherit;
+}
+
+.blog-tools button[aria-pressed="true"] {
+  border-color: var(--red);
+  background: rgba(211, 47, 47, 0.1);
+  color: var(--red);
+  font-weight: 900;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 3px solid rgba(12, 127, 176, 0.42);
+  outline-offset: 3px;
 }
 
 .page-hero {

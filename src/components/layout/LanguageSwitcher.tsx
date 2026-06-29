@@ -8,12 +8,13 @@ import { localizedPath } from "@/lib/routes";
 export function LanguageSwitcher({ currentLocale }: { currentLocale: Locale }) {
   const pathname = usePathname();
   const router = useRouter();
+  const label = currentLocale === "en" ? "Language" : currentLocale === "ar" ? "اللغة" : "زبان";
 
   return (
     <label className="language-switcher">
-      <span className="sr-only">Language</span>
+      <span className="sr-only">{label}</span>
       <select
-        aria-label="Language"
+        aria-label={label}
         value={currentLocale}
         onChange={(event) => router.push(localizedPath(pathname, event.target.value as Locale))}
       >

@@ -26,7 +26,9 @@ export function Breadcrumbs({
         {allItems.map((item, index) => (
           <span key={item.href}>
             {index > 0 ? <Icon size={14} aria-hidden="true" /> : null}
-            <Link href={item.href}>{item.label}</Link>
+            <Link href={item.href} aria-current={index === allItems.length - 1 ? "page" : undefined}>
+              {item.label}
+            </Link>
           </span>
         ))}
       </nav>

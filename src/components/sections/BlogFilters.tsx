@@ -14,17 +14,24 @@ export function BlogFilters({ locale }: { locale: Locale }) {
     const matchesCategory = category === "all" || post.category[locale] === category;
     return matchesQuery && matchesCategory;
   });
+  const resultLabel =
+    locale === "en"
+      ? `${filtered.length} article${filtered.length === 1 ? "" : "s"} found`
+      : locale === "ar"
+        ? `تم العثور على ${filtered.length} مقال`
+        : `${filtered.length} مضامین ملے`;
 
   return (
     <>
       <div className="blog-tools">
         <label className="sr-only" htmlFor="blog-search">{ui[locale].search}</label>
         <input id="blog-search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder={ui[locale].search} />
-        <button type="button" onClick={() => setCategory("all")}>{ui[locale].all}</button>
+        <button type="button" aria-pressed={category === "all"} onClick={() => setCategory("all")}>{ui[locale].all}</button>
         {categories.map((item) => (
-          <button key={item} type="button" onClick={() => setCategory(item)}>{item}</button>
+          <button key={item} type="button" aria-pressed={category === item} onClick={() => setCategory(item)}>{item}</button>
         ))}
       </div>
+      <p className="sr-only" aria-live="polite">{resultLabel}</p>
       <div className="card-grid three">
         {filtered.map((post) => <BlogCard key={post.slug} post={post} locale={locale} />)}
       </div>

@@ -5,6 +5,10 @@ import { Locale, site } from "@/lib/site";
 import { navItems, pathFor, routeLabels } from "@/lib/routes";
 
 export function Footer({ locale }: { locale: Locale }) {
+  const quickLinksLabel = locale === "en" ? "Footer quick links" : locale === "ar" ? "روابط التذييل السريعة" : "فوٹر فوری روابط";
+  const serviceLinksLabel = locale === "en" ? "Footer services" : locale === "ar" ? "خدمات التذييل" : "فوٹر سروسز";
+  const areaLinksLabel = locale === "en" ? "Footer service areas" : locale === "ar" ? "مناطق الخدمة في التذييل" : "فوٹر سروس علاقے";
+
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
@@ -18,7 +22,7 @@ export function Footer({ locale }: { locale: Locale }) {
                 : "جدہ، مکہ اور قریبی راستوں پر عام فلیٹ بیڈ گاڑی منتقلی کے لیے 24 گھنٹے رابطہ۔"}
           </p>
         </div>
-        <div>
+        <nav aria-label={quickLinksLabel}>
           <h3>{locale === "en" ? "Quick Links" : locale === "ar" ? "روابط سريعة" : "فوری روابط"}</h3>
           {navItems.map((item) => (
             <Link key={item} href={pathFor(locale, item)}>
@@ -26,23 +30,23 @@ export function Footer({ locale }: { locale: Locale }) {
             </Link>
           ))}
           <Link href="/sitemap.html">Sitemap</Link>
-        </div>
-        <div>
+        </nav>
+        <nav aria-label={serviceLinksLabel}>
           <h3>{routeLabels[locale].services}</h3>
           {services.slice(0, 5).map((service) => (
             <Link key={service.slug} href={`/${locale}/services/${service.slug}`}>
               {service.title[locale]}
             </Link>
           ))}
-        </div>
-        <div>
+        </nav>
+        <nav aria-label={areaLinksLabel}>
           <h3>{routeLabels[locale].areas}</h3>
           {areas.slice(0, 6).map((area) => (
             <Link key={area[0]} href={`/${locale}/areas/${area[0]}`}>
               {areaTitle(area, locale)}
             </Link>
           ))}
-        </div>
+        </nav>
         <address>
           <h3>{routeLabels[locale].contact}</h3>
           <a href={site.phoneHref}><Phone size={16} /> {site.phoneDisplay}</a>

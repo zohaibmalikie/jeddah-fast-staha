@@ -18,7 +18,10 @@ export function Header({ locale }: { locale: Locale }) {
             <small>{locale === "en" ? "Car transport service" : locale === "ar" ? "خدمة نقل السيارات" : "گاڑی منتقلی سروس"}</small>
           </span>
         </Link>
-        <nav className="main-nav" aria-label="Primary navigation">
+        <nav
+          className="main-nav"
+          aria-label={locale === "en" ? "Primary navigation" : locale === "ar" ? "التنقل الرئيسي" : "مرکزی نیویگیشن"}
+        >
           {navItems.map((item) => (
             <Link key={item} href={pathFor(locale, item)}>
               {routeLabels[locale][item]}

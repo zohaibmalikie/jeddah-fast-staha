@@ -6,12 +6,14 @@ import { Locale } from "@/lib/site";
 
 export function ServiceCard({ service, locale }: { service: (typeof import("@/content/content").services)[number]; locale: Locale }) {
   const Icon = service.icon;
+  const linkLabel = `${ui[locale].readMore}: ${service.title[locale]}`;
+
   return (
     <article className="card service-card">
       <Icon size={26} aria-hidden="true" />
       <h3>{service.title[locale]}</h3>
       <p>{service.description[locale]}</p>
-      <Link href={`/${locale}/services/${service.slug}`}>
+      <Link href={`/${locale}/services/${service.slug}`} aria-label={linkLabel}>
         {ui[locale].readMore} <ChevronRight size={16} aria-hidden="true" />
       </Link>
     </article>
@@ -28,6 +30,8 @@ export function AreaCard({ slug, title, locale }: { slug: string; title: string;
 }
 
 export function BlogCard({ post, locale }: { post: (typeof posts)[number]; locale: Locale }) {
+  const linkLabel = `${ui[locale].readMore}: ${post.title[locale]}`;
+
   return (
     <article className="card blog-card">
       <Image
@@ -42,7 +46,7 @@ export function BlogCard({ post, locale }: { post: (typeof posts)[number]; local
         <h3>{post.title[locale]}</h3>
         <p>{post.excerpt[locale]}</p>
         <span className="meta"><Calendar size={15} /> {post.date} · {post.readTime} min</span>
-        <Link href={`/${locale}/blog/${post.slug}`}>{ui[locale].readMore}</Link>
+        <Link href={`/${locale}/blog/${post.slug}`} aria-label={linkLabel}>{ui[locale].readMore}</Link>
       </div>
     </article>
   );
