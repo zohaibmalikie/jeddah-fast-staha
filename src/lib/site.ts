@@ -1,10 +1,10 @@
 export const site = {
   name: {
-    ar: "Satha Express",
-    en: "Satha Express",
-    ur: "Satha Express",
+    ar: "Jeddah Satha",
+    en: "Jeddah Satha",
+    ur: "Jeddah Satha",
   },
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://staha-jeddah.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://jeddahsatha.co",
   phoneDisplay: "0593057492",
   phoneIntl: "+966593057492",
   phoneHref: "tel:+966593057492",

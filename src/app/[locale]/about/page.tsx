@@ -5,9 +5,9 @@ import { pageMetadata } from "@/lib/seo";
 import { Locale, site } from "@/lib/site";
 
 const copy = {
-  ar: ["من نحن", "Satha Express خدمة محلية لنقل السيارات في جدة ومكة بتواصل مباشر وتركيز على الأمان والوضوح."],
-  en: ["About Us", "Satha Express is a local car transport service for Jeddah and Makkah focused on clear communication and safe handling."],
-  ur: ["ہمارے بارے میں", "Satha Express جدہ اور مکہ کے لیے مقامی گاڑی منتقلی سروس ہے جس میں واضح رابطہ اور محفوظ ہینڈلنگ اہم ہے۔"],
+  ar: ["من نحن", "Jeddah Satha خدمة محلية لنقل السيارات في جدة ومكة بتواصل مباشر وتركيز على الأمان والوضوح."],
+  en: ["About Us", "Jeddah Satha is a local car transport service for Jeddah and Makkah focused on clear communication and safe handling."],
+  ur: ["ہمارے بارے میں", "Jeddah Satha جدہ اور مکہ کے لیے مقامی گاڑی منتقلی سروس ہے جس میں واضح رابطہ اور محفوظ ہینڈلنگ اہم ہے۔"],
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {

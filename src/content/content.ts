@@ -2,14 +2,25 @@ import { Car, Clock, MapPin, MessageCircle, Shield, Sparkles, Truck, Wrench } fr
 import { Locale } from "@/lib/site";
 
 export const images = {
-  hero: "/images/hero-flatbed.webp",
-  truck: "/images/red-flatbed.webp",
+  hero: "/images/real-flatbed-loading.webp",
+  truck: "/images/real-flatbed-side.webp",
   roadside: "/images/roadside-service.webp",
   city: "/images/jeddah-city.webp",
   road: "/images/safe-road.webp",
-  workshop: "/images/red-flatbed.webp",
+  workshop: "/images/blog-workshop-transport.webp",
   highway: "/images/safe-road.webp",
-  phoneMap: "/images/hero-flatbed.webp",
+  phoneMap: "/images/blog-whatsapp-booking.webp",
+  realLoading: "/images/real-flatbed-loading.webp",
+  realSide: "/images/real-flatbed-side.webp",
+  blogEmergency: "/images/blog-emergency-towing-jeddah.webp",
+  blogFlatbedSide: "/images/blog-flatbed-side-jeddah.webp",
+  blogLuxury: "/images/blog-luxury-car-towing.webp",
+  blogRoadside: "/images/blog-roadside-flatbed.webp",
+  blogAccident: "/images/blog-accident-car-pickup.webp",
+  blogNight: "/images/blog-night-flatbed.webp",
+  blogWorkshop: "/images/blog-workshop-transport.webp",
+  blogCity: "/images/blog-city-coverage.webp",
+  blogHighway: "/images/blog-highway-safety.webp",
 };
 
 export const ui = {
@@ -308,7 +319,7 @@ export const testimonials = {
 export const posts = [
   {
     slug: "best-staha-jeddah-safe-service",
-    image: images.truck,
+    image: "/images/articles/best-staha-jeddah-safe-service.webp",
     category: { ar: "نصائح", en: "Tips", ur: "مشورے" },
     title: {
       ar: "أفضل سطحة في جدة: كيف تختار خدمة آمنة؟",
@@ -393,7 +404,7 @@ export const posts = [
   },
   {
     slug: "what-to-do-car-breakdown-jeddah",
-    image: images.roadside,
+    image: "/images/articles/what-to-do-car-breakdown-jeddah.webp",
     category: { ar: "طوارئ", en: "Emergency", ur: "ایمرجنسی" },
     title: {
       ar: "ماذا تفعل عند تعطل سيارتك في جدة؟",
@@ -427,7 +438,7 @@ export const posts = [
   },
   {
     slug: "car-transport-cost-jeddah-makkah",
-    image: images.city,
+    image: "/images/articles/car-transport-cost-jeddah-makkah.webp",
     category: { ar: "أسعار", en: "Pricing", ur: "قیمت" },
     title: {
       ar: "تكلفة نقل السيارة بالسطحة داخل جدة ومكة",
@@ -461,7 +472,7 @@ export const posts = [
   },
   {
     slug: "request-staha-jeddah-to-makkah",
-    image: images.highway,
+    image: "/images/articles/request-staha-jeddah-to-makkah.webp",
     category: { ar: "بين المدن", en: "Intercity", ur: "شہروں کے درمیان" },
     title: {
       ar: "طريقة طلب سطحة من جدة إلى مكة",
@@ -495,7 +506,7 @@ export const posts = [
   },
   {
     slug: "tips-before-flatbed-car-transport",
-    image: images.phoneMap,
+    image: "/images/articles/tips-before-flatbed-car-transport.webp",
     category: { ar: "سلامة", en: "Safety", ur: "حفاظت" },
     title: {
       ar: "أهم النصائح قبل نقل سيارتك بالسطحة",
@@ -529,7 +540,7 @@ export const posts = [
   },
   {
     slug: "staha-north-jeddah-guide",
-    image: images.truck,
+    image: "/images/articles/staha-north-jeddah-guide.webp",
     category: { ar: "مناطق جدة", en: "Jeddah Areas", ur: "جدہ علاقے" },
     title: {
       ar: "سطحة شمال جدة: متى تحتاجها وكيف تطلبها بسرعة؟",
@@ -560,7 +571,7 @@ export const posts = [
   },
   {
     slug: "staha-south-jeddah-guide",
-    image: images.roadside,
+    image: "/images/articles/staha-south-jeddah-guide.webp",
     category: { ar: "مناطق جدة", en: "Jeddah Areas", ur: "جدہ علاقے" },
     title: {
       ar: "سطحة جنوب جدة لنقل السيارات المتعطلة والمصدومة",
@@ -591,7 +602,7 @@ export const posts = [
   },
   {
     slug: "accident-car-towing-jeddah",
-    image: images.roadside,
+    image: "/images/articles/accident-car-towing-jeddah.webp",
     category: { ar: "حوادث", en: "Accident Transport", ur: "حادثہ ٹرانسپورٹ" },
     title: {
       ar: "نقل سيارة مصدومة في جدة: خطوات مهمة قبل وصول السطحة",
@@ -622,7 +633,7 @@ export const posts = [
   },
   {
     slug: "roadside-pickup-jeddah-makkah",
-    image: images.road,
+    image: "/images/articles/roadside-pickup-jeddah-makkah.webp",
     category: { ar: "مساعدة الطريق", en: "Roadside Pickup", ur: "روڈ سائیڈ پک اپ" },
     title: {
       ar: "استلام سيارة من الطريق بين جدة ومكة",
@@ -653,7 +664,7 @@ export const posts = [
   },
   {
     slug: "makkah-haram-area-car-towing",
-    image: images.city,
+    image: "/images/articles/makkah-haram-area-car-towing.webp",
     category: { ar: "مكة", en: "Makkah", ur: "مکہ" },
     title: {
       ar: "سطحة قرب الحرم في مكة: نصائح لتحديد نقطة الاستلام",
@@ -684,7 +695,7 @@ export const posts = [
   },
   {
     slug: "car-towing-al-safa-al-marwah-jeddah",
-    image: images.phoneMap,
+    image: "/images/articles/car-towing-al-safa-al-marwah-jeddah.webp",
     category: { ar: "أحياء جدة", en: "Jeddah Districts", ur: "جدہ اضلاع" },
     title: {
       ar: "سطحة الصفا والمروة في جدة: خدمة قريبة للأحياء السكنية",
@@ -715,7 +726,7 @@ export const posts = [
   },
   {
     slug: "towing-luxury-cars-jeddah",
-    image: images.truck,
+    image: "/images/articles/towing-luxury-cars-jeddah.webp",
     category: { ar: "نقل آمن", en: "Safe Transport", ur: "محفوظ منتقلی" },
     title: {
       ar: "نقل السيارات الفاخرة بالسطحة في جدة ومكة",
@@ -746,7 +757,7 @@ export const posts = [
   },
   {
     slug: "workshop-car-transport-jeddah",
-    image: images.roadside,
+    image: "/images/articles/workshop-car-transport-jeddah.webp",
     category: { ar: "ورش", en: "Workshop Transport", ur: "ورکشاپ منتقلی" },
     title: {
       ar: "نقل السيارة إلى الورشة في جدة: متى يكون أفضل من القيادة؟",
@@ -777,7 +788,7 @@ export const posts = [
   },
   {
     slug: "airport-road-car-towing-jeddah",
-    image: images.road,
+    image: "/images/articles/airport-road-car-towing-jeddah.webp",
     category: { ar: "طرق جدة", en: "Jeddah Roads", ur: "جدہ روڈز" },
     title: {
       ar: "سطحة طريق المطار جدة: ماذا تفعل عند تعطل السيارة؟",
@@ -808,7 +819,7 @@ export const posts = [
   },
   {
     slug: "whatsapp-staha-booking-guide",
-    image: images.phoneMap,
+    image: "/images/articles/whatsapp-staha-booking-guide.webp",
     category: { ar: "واتساب", en: "WhatsApp Booking", ur: "واٹس ایپ بکنگ" },
     title: {
       ar: "طريقة طلب سطحة عبر واتساب في جدة ومكة",
@@ -839,7 +850,7 @@ export const posts = [
   },
   {
     slug: "night-car-towing-jeddah-makkah",
-    image: images.road,
+    image: "/images/articles/night-car-towing-jeddah-makkah.webp",
     category: { ar: "طوارئ", en: "Emergency", ur: "ایمرجنسی" },
     title: {
       ar: "سطحة ليلية في جدة ومكة: نصائح عند تعطل السيارة ليلاً",
@@ -870,7 +881,7 @@ export const posts = [
   },
   {
     slug: "family-car-breakdown-makkah-road",
-    image: images.city,
+    image: "/images/articles/family-car-breakdown-makkah-road.webp",
     category: { ar: "سلامة العائلة", en: "Family Safety", ur: "فیملی سیفٹی" },
     title: {
       ar: "تعطل سيارة العائلة على طريق مكة: ماذا تفعل؟",
@@ -896,6 +907,316 @@ export const posts = [
       ur: [
         { heading: "مسافروں کی حفاظت کریں", paragraphs: ["اگر فیملی کار خراب ہو جائے تو مسافروں کو روڈ سے دور محفوظ جگہ رکھیں۔ ہیزرڈ لائٹس آن کریں اور گاڑی کے پیچھے کھڑے نہ ہوں۔", "واٹس ایپ لوکیشن بھیجیں اور اگر رابطے کے لیے ضروری ہو تو مسافروں کی ضرورت بتائیں۔"] },
         { heading: "واضح منزل منتخب کریں", paragraphs: ["طے کریں گاڑی گھر، ورکشاپ یا دوسرے شہر لے جانی ہے۔ جدہ سے مکہ یا مکہ سے جدہ منتقلی کے لیے واضح منزل اور قیمت ضروری ہے۔", "مصروف روڈ پر جگہ محفوظ نہ ہو تو گاڑی ٹھیک کرنے کی کوشش نہ کریں۔"] },
+      ],
+    },
+  },
+  {
+    slug: "staha-near-me-jeddah-fast-response",
+    image: "/images/articles/staha-near-me-jeddah-fast-response.webp",
+    category: { ar: "استجابة سريعة", en: "Fast Response", ur: "فوری سروس" },
+    title: {
+      ar: "سطحة قريبة مني في جدة: كيف تسرع وصول السائق؟",
+      en: "Tow Truck Near Me in Jeddah: How to Get Faster Pickup",
+      ur: "جدہ میں قریبی سطحة: ڈرائیور جلد کیسے پہنچے؟",
+    },
+    excerpt: {
+      ar: "خطوات بسيطة تجعل طلب السطحة أوضح وتساعد السائق على الوصول لنقطة الاستلام بسرعة.",
+      en: "Simple steps that make the towing request clearer and help the driver reach you faster.",
+      ur: "آسان اقدامات جو سطحة بکنگ کو واضح کرتے ہیں اور ڈرائیور کو جلد پہنچاتے ہیں۔",
+    },
+    date: "2026-05-14",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "ابدأ بالموقع الصحيح", paragraphs: ["عند البحث عن سطحة قريبة مني جدة، أرسل اللوكيشن من واتساب بدلاً من وصف طويل. أضف اسم الحي وأقرب معلم واضح إذا كنت على طريق مزدحم أو داخل موقف.", "كلما كان الموقع أدق، أصبح تقدير وقت الوصول والسعر أسرع وأوضح."] },
+        { heading: "اذكر حالة السيارة", paragraphs: ["قل للسائق هل السيارة تعمل أم لا، وهل تحتاج تحميل حذر بسبب عطل أو حادث. هذه التفاصيل تساعد في اختيار طريقة الوصول والتحميل المناسبة.", "إذا كان المكان ضيقاً، التقط صورة عامة للموقع وأرسلها قبل وصول السائق."] },
+      ],
+      en: [
+        { heading: "Start with the exact location", paragraphs: ["When searching for a tow truck near me in Jeddah, send your WhatsApp location instead of a long description. Add the district name and a clear nearby landmark if you are on a busy road or inside parking.", "The more accurate the location, the faster arrival time and pricing can be confirmed."] },
+        { heading: "Mention vehicle condition", paragraphs: ["Tell the driver whether the car can move and if careful loading is needed after a breakdown or accident. These details help plan access and loading.", "If the pickup point is tight, send a general photo of the area before the driver arrives."] },
+      ],
+      ur: [
+        { heading: "صحیح لوکیشن سے شروع کریں", paragraphs: ["جدہ میں قریبی سطحة تلاش کرتے وقت لمبی وضاحت کے بجائے واٹس ایپ لوکیشن بھیجیں۔ اگر مصروف روڈ یا پارکنگ میں ہیں تو علاقہ اور قریبی نشان بھی بتائیں۔", "لوکیشن جتنی درست ہو گی، وقت اور قیمت اتنی جلدی واضح ہو گی۔"] },
+        { heading: "گاڑی کی حالت بتائیں", paragraphs: ["ڈرائیور کو بتائیں گاڑی چل سکتی ہے یا نہیں، اور خرابی یا حادثے کی وجہ سے احتیاط چاہیے یا نہیں۔ یہ معلومات لوڈنگ کو بہتر بناتی ہیں۔", "اگر جگہ تنگ ہے تو ڈرائیور کے آنے سے پہلے جگہ کی عمومی تصویر بھیج دیں۔"] },
+      ],
+    },
+  },
+  {
+    slug: "flatbed-vs-rope-towing-jeddah",
+    image: "/images/articles/flatbed-vs-rope-towing-jeddah.webp",
+    category: { ar: "مقارنة", en: "Comparison", ur: "موازنہ" },
+    title: {
+      ar: "السطحة أم السحب العادي: أيهما أفضل لسيارتك؟",
+      en: "Flatbed vs Regular Towing: Which Is Better for Your Car?",
+      ur: "فلیٹ بیڈ یا عام ٹوئنگ: گاڑی کے لیے کیا بہتر ہے؟",
+    },
+    excerpt: {
+      ar: "متى يكون نقل السيارة على السطحة أكثر أماناً من السحب العادي داخل جدة ومكة.",
+      en: "When flatbed transport is safer than regular towing in Jeddah and Makkah.",
+      ur: "جدہ اور مکہ میں فلیٹ بیڈ منتقلی عام ٹوئنگ سے کب زیادہ محفوظ ہے۔",
+    },
+    date: "2026-05-21",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "لماذا يختار البعض السطحة؟", paragraphs: ["السطحة ترفع السيارة بالكامل فوق الشاحنة، وهذا يقلل الضغط على الإطارات ونظام الحركة. لذلك تكون مناسبة للسيارات المصدومة أو المتعطلة أو التي لا يمكن قيادتها بأمان.", "داخل جدة ومكة، السطحة خيار عملي عندما تريد نقل السيارة إلى ورشة أو منزل بدون جرها على الطريق."] },
+        { heading: "متى يكفي السحب العادي؟", paragraphs: ["قد يكون السحب العادي مناسباً لبعض الحالات الخفيفة، لكنه لا يناسب كل السيارات. إذا لم تكن متأكداً من حالة السيارة، اختر السطحة لتقليل المخاطر.", "اسأل عن طريقة النقل قبل تأكيد الطلب حتى تعرف ما الذي سيحدث لسيارتك."] },
+      ],
+      en: [
+        { heading: "Why many drivers choose flatbed", paragraphs: ["A flatbed carries the whole car on the truck, reducing stress on tires and drivetrain parts. That makes it useful for accident cars, breakdowns, and vehicles that cannot be driven safely.", "In Jeddah and Makkah, flatbed transport is practical when moving a car to a workshop or home without dragging it on the road."] },
+        { heading: "When regular towing may be enough", paragraphs: ["Regular towing may work for some light situations, but it is not right for every vehicle. If you are unsure about vehicle condition, a flatbed can reduce risk.", "Ask about the transport method before confirming the request so you know how the car will be handled."] },
+      ],
+      ur: [
+        { heading: "لوگ فلیٹ بیڈ کیوں منتخب کرتے ہیں؟", paragraphs: ["فلیٹ بیڈ گاڑی کو مکمل طور پر ٹرک پر رکھتا ہے، اس سے ٹائر اور ڈرائیو ٹرین پر دباؤ کم ہوتا ہے۔ یہ حادثہ زدہ، خراب یا غیر محفوظ گاڑی کے لیے مفید ہے۔", "جدہ اور مکہ میں فلیٹ بیڈ گاڑی کو سڑک پر گھسیٹے بغیر ورکشاپ یا گھر پہنچاتا ہے۔"] },
+        { heading: "عام ٹوئنگ کب کافی ہو سکتی ہے؟", paragraphs: ["عام ٹوئنگ کچھ ہلکی صورتحال میں چل سکتی ہے، مگر ہر گاڑی کے لیے نہیں۔ اگر حالت واضح نہ ہو تو فلیٹ بیڈ خطرہ کم کرتا ہے۔", "درخواست کنفرم کرنے سے پہلے نقل کا طریقہ پوچھیں تاکہ گاڑی کی ہینڈلنگ واضح ہو۔"] },
+      ],
+    },
+  },
+  {
+    slug: "electric-hybrid-car-towing-jeddah",
+    image: "/images/articles/electric-hybrid-car-towing-jeddah.webp",
+    category: { ar: "سيارات حديثة", en: "Modern Cars", ur: "جدید گاڑیاں" },
+    title: {
+      ar: "نقل السيارات الكهربائية والهجينة بالسطحة في جدة",
+      en: "Towing Electric and Hybrid Cars by Flatbed in Jeddah",
+      ur: "جدہ میں الیکٹرک اور ہائبرڈ گاڑیوں کی فلیٹ بیڈ منتقلی",
+    },
+    excerpt: {
+      ar: "نصائح قبل نقل سيارة كهربائية أو هجينة لتجنب الأخطاء أثناء التحميل.",
+      en: "Tips before moving an electric or hybrid car to avoid loading mistakes.",
+      ur: "الیکٹرک یا ہائبرڈ گاڑی منتقل کرنے سے پہلے ضروری مشورے۔",
+    },
+    date: "2026-05-28",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "لماذا السطحة مهمة؟", paragraphs: ["السيارات الكهربائية والهجينة قد تحتاج احتياطاً إضافياً عند التعطل. نقلها بالسطحة يساعد على تجنب دوران العجلات أو الضغط على أنظمة الحركة بدون داع.", "أخبر السائق بنوع السيارة وموديلها قبل الوصول، واذكر إذا كانت البطارية فارغة أو السيارة لا تدخل وضع الحياد."] },
+        { heading: "قبل التحميل", paragraphs: ["راجع تعليمات السيارة إن أمكن، وأرسل صورة عامة من لوحة العدادات إذا ظهرت رسالة خطأ. المعلومات الواضحة تجعل النقل أكثر أماناً.", "لا تحاول سحب السيارة بطريقة عشوائية إذا لم تكن تتحرك."] },
+      ],
+      en: [
+        { heading: "Why flatbed matters", paragraphs: ["Electric and hybrid cars may need extra care after a breakdown. Flatbed transport helps avoid unnecessary wheel rotation or drivetrain stress.", "Tell the driver the vehicle make and model before arrival, and mention if the battery is flat or the car cannot enter neutral."] },
+        { heading: "Before loading", paragraphs: ["Check the vehicle guidance if possible, and send a general dashboard photo if an error message is showing. Clear information makes transport safer.", "Avoid improvised towing if the car cannot move."] },
+      ],
+      ur: [
+        { heading: "فلیٹ بیڈ کیوں اہم ہے؟", paragraphs: ["الیکٹرک اور ہائبرڈ گاڑیوں کو خرابی کے بعد اضافی احتیاط چاہیے ہو سکتی ہے۔ فلیٹ بیڈ غیر ضروری وہیل حرکت اور ڈرائیو سسٹم کے دباؤ کو کم کرتا ہے۔", "ڈرائیور کو گاڑی کا میک اور ماڈل پہلے بتائیں، اور اگر بیٹری خالی ہے یا نیوٹرل نہیں ہو رہی تو ذکر کریں۔"] },
+        { heading: "لوڈنگ سے پہلے", paragraphs: ["ممکن ہو تو گاڑی کی ہدایات دیکھیں، اور اگر ڈیش بورڈ پر ایرر ہے تو عمومی تصویر بھیجیں۔ واضح معلومات منتقلی کو محفوظ بناتی ہیں۔", "اگر گاڑی نہیں چل رہی تو عارضی طریقے سے کھینچنے کی کوشش نہ کریں۔"] },
+      ],
+    },
+  },
+  {
+    slug: "summer-car-breakdown-jeddah-heat",
+    image: "/images/articles/summer-car-breakdown-jeddah-heat.webp",
+    category: { ar: "حرارة الصيف", en: "Summer Heat", ur: "گرمی" },
+    title: {
+      ar: "تعطل السيارة في حر جدة: كيف تتصرف بسرعة؟",
+      en: "Car Breakdown in Jeddah Heat: What to Do Quickly",
+      ur: "جدہ کی گرمی میں گاڑی خراب ہو جائے تو کیا کریں؟",
+    },
+    excerpt: {
+      ar: "خطوات آمنة عند ارتفاع حرارة السيارة أو توقفها في أجواء جدة الحارة.",
+      en: "Safe steps when your car overheats or stops during hot Jeddah weather.",
+      ur: "جدہ کی گرمی میں گاڑی اوور ہیٹ یا بند ہو تو محفوظ اقدامات۔",
+    },
+    date: "2026-06-04",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "أوقف السيارة بأمان", paragraphs: ["إذا ارتفعت حرارة السيارة، لا تستمر في القيادة لمسافة طويلة. توقف في مكان آمن، أطفئ المحرك إذا لزم الأمر، وانتظر بعيداً عن حركة السيارات.", "حر جدة قد يجعل الانتظار صعباً، لذلك أرسل اللوكيشن والوجهة بسرعة عبر واتساب."] },
+        { heading: "متى تطلب السطحة؟", paragraphs: ["اطلب سطحة إذا ظهرت رائحة حرق، بخار، تسريب، أو تحذير حرارة مستمر. القيادة في هذه الحالة قد تزيد تكلفة الإصلاح.", "حدد هل تريد نقل السيارة إلى ورشة قريبة أو إلى المنزل."] },
+      ],
+      en: [
+        { heading: "Stop safely", paragraphs: ["If the car overheats, do not keep driving long distances. Stop safely, switch off the engine if needed, and wait away from moving traffic.", "Jeddah heat can make waiting difficult, so send your location and destination quickly on WhatsApp."] },
+        { heading: "When to request a flatbed", paragraphs: ["Request towing if you notice a burning smell, steam, leaks, or repeated temperature warnings. Driving in that condition can increase repair cost.", "Confirm whether the car should go to a nearby workshop or home."] },
+      ],
+      ur: [
+        { heading: "محفوظ جگہ رکیں", paragraphs: ["اگر گاڑی اوور ہیٹ ہو جائے تو لمبا فاصلہ نہ چلائیں۔ محفوظ جگہ رکیں، ضرورت ہو تو انجن بند کریں، اور ٹریفک سے دور انتظار کریں۔", "جدہ کی گرمی میں انتظار مشکل ہو سکتا ہے، اس لیے واٹس ایپ پر لوکیشن اور منزل جلد بھیجیں۔"] },
+        { heading: "سطحة کب طلب کریں؟", paragraphs: ["اگر جلنے کی بو، بھاپ، لیک یا مسلسل ہیٹ وارننگ ہو تو سطحة طلب کریں۔ اس حالت میں ڈرائیو مرمت کی لاگت بڑھا سکتی ہے۔", "طے کریں گاڑی قریبی ورکشاپ جائے گی یا گھر۔"] },
+      ],
+    },
+  },
+  {
+    slug: "tire-damage-flatbed-towing-jeddah",
+    image: "/images/articles/tire-damage-flatbed-towing-jeddah.webp",
+    category: { ar: "إطارات", en: "Tire Damage", ur: "ٹائر خرابی" },
+    title: {
+      ar: "تلف الإطار في جدة: متى تحتاج سطحة بدلاً من القيادة؟",
+      en: "Tire Damage in Jeddah: When You Need Flatbed Towing",
+      ur: "جدہ میں ٹائر خراب ہو جائے تو فلیٹ بیڈ کب چاہیے؟",
+    },
+    excerpt: {
+      ar: "تعرف على الحالات التي يكون فيها نقل السيارة أكثر أماناً من محاولة القيادة.",
+      en: "Know when moving the car by flatbed is safer than trying to drive.",
+      ur: "جانیں کب گاڑی چلانے کے بجائے فلیٹ بیڈ سے منتقل کرنا زیادہ محفوظ ہے۔",
+    },
+    date: "2026-06-11",
+    readTime: 4,
+    content: {
+      ar: [
+        { heading: "لا تقد السيارة على إطار تالف", paragraphs: ["إذا كان الإطار ممزقاً أو الجنط متضرراً، فالقيادة قد تسبب ضرراً أكبر. توقف في مكان آمن واطلب سطحة إذا لم تكن متأكداً.", "على الطرق السريعة، لا تحاول تغيير الإطار إذا كان المكان غير آمن."] },
+        { heading: "معلومات تساعد السائق", paragraphs: ["أرسل صورة عامة للإطار، موقعك، والوجهة المطلوبة. إذا كانت السيارة منخفضة أو محملة، اذكر ذلك قبل وصول السطحة.", "هذه التفاصيل تساعد في تجهيز التحميل بشكل أفضل."] },
+      ],
+      en: [
+        { heading: "Do not drive on a damaged tire", paragraphs: ["If the tire is torn or the wheel is damaged, driving can cause more harm. Stop safely and request a flatbed if you are unsure.", "On highways, do not try changing a tire if the location is unsafe."] },
+        { heading: "Details that help the driver", paragraphs: ["Send a general tire photo, your location, and the destination. If the car is low or loaded, mention that before pickup.", "These details help prepare safer loading."] },
+      ],
+      ur: [
+        { heading: "خراب ٹائر پر گاڑی نہ چلائیں", paragraphs: ["اگر ٹائر پھٹا ہے یا رم خراب ہے تو ڈرائیو مزید نقصان کر سکتی ہے۔ محفوظ جگہ رکیں اور شک ہو تو فلیٹ بیڈ طلب کریں۔", "ہائی وے پر جگہ محفوظ نہ ہو تو ٹائر بدلنے کی کوشش نہ کریں۔"] },
+        { heading: "ڈرائیور کے لیے معلومات", paragraphs: ["ٹائر کی عمومی تصویر، لوکیشن اور منزل بھیجیں۔ اگر گاڑی نیچی یا لوڈڈ ہے تو پہلے بتائیں۔", "یہ معلومات لوڈنگ کو زیادہ محفوظ بناتی ہیں۔"] },
+      ],
+    },
+  },
+  {
+    slug: "accident-insurance-towing-jeddah",
+    image: "/images/articles/accident-insurance-towing-jeddah.webp",
+    category: { ar: "حوادث", en: "Accident Help", ur: "حادثہ مدد" },
+    title: {
+      ar: "بعد حادث في جدة: صور ومعلومات قبل طلب السطحة",
+      en: "After an Accident in Jeddah: Photos and Details Before Towing",
+      ur: "جدہ میں حادثے کے بعد: سطحة سے پہلے تصاویر اور معلومات",
+    },
+    excerpt: {
+      ar: "ما الذي توثقه قبل نقل السيارة المصدومة إلى الورشة أو المنزل؟",
+      en: "What to document before moving an accident-damaged car to a workshop or home.",
+      ur: "حادثہ زدہ گاڑی کو ورکشاپ یا گھر لے جانے سے پہلے کیا ریکارڈ کریں۔",
+    },
+    date: "2026-06-18",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "وثق الحالة أولاً", paragraphs: ["قبل نقل سيارة مصدومة، صور السيارة من عدة زوايا إذا كان المكان آمناً. احتفظ أيضاً بموقع الحادث وأي معلومات تحتاجها للتأمين أو الورشة.", "لا تؤخر السلامة من أجل الصور؛ ابتعد عن الطريق أولاً."] },
+        { heading: "اطلب النقل بوضوح", paragraphs: ["أرسل موقع الاستلام، الوجهة، ونوع الضرر العام. إذا كانت العجلات لا تتحرك أو السيارة لا تدخل وضع الحياد، أخبر السائق.", "التفاصيل الواضحة تساعد في نقل السيارة بدون ضغط إضافي."] },
+      ],
+      en: [
+        { heading: "Document the condition first", paragraphs: ["Before moving an accident-damaged car, take photos from several angles if the place is safe. Keep the accident location and any details needed for insurance or the workshop.", "Do not delay safety for photos; move away from traffic first."] },
+        { heading: "Request transport clearly", paragraphs: ["Send pickup location, destination, and general damage details. If the wheels do not move or the car cannot enter neutral, tell the driver.", "Clear details help move the car without extra stress."] },
+      ],
+      ur: [
+        { heading: "پہلے حالت ریکارڈ کریں", paragraphs: ["حادثہ زدہ گاڑی منتقل کرنے سے پہلے جگہ محفوظ ہو تو مختلف زاویوں سے تصاویر لیں۔ حادثے کی لوکیشن اور انشورنس یا ورکشاپ کے لیے ضروری معلومات محفوظ رکھیں۔", "تصاویر کے لیے حفاظت میں تاخیر نہ کریں؛ پہلے ٹریفک سے دور ہوں۔"] },
+        { heading: "درخواست واضح کریں", paragraphs: ["پک اپ لوکیشن، منزل اور نقصان کی عمومی تفصیل بھیجیں۔ اگر پہیے نہیں چلتے یا گاڑی نیوٹرل نہیں ہو رہی تو ڈرائیور کو بتائیں۔", "واضح معلومات گاڑی کو اضافی دباؤ کے بغیر منتقل کرنے میں مدد دیتی ہیں۔"] },
+      ],
+    },
+  },
+  {
+    slug: "long-distance-car-transport-saudi",
+    image: "/images/articles/long-distance-car-transport-saudi.webp",
+    category: { ar: "مسافات طويلة", en: "Long Distance", ur: "لمبا فاصلہ" },
+    title: {
+      ar: "نقل سيارة لمسافة طويلة من جدة: تجهيزات قبل الرحلة",
+      en: "Long-Distance Car Transport from Jeddah: What to Prepare",
+      ur: "جدہ سے لمبے فاصلے پر گاڑی منتقلی: تیاری کیسے کریں",
+    },
+    excerpt: {
+      ar: "قائمة قصيرة لتجهيز السيارة والوجهة قبل النقل بين المدن.",
+      en: "A short checklist for preparing the car and destination before intercity transport.",
+      ur: "شہروں کے درمیان منتقلی سے پہلے گاڑی اور منزل کی مختصر چیک لسٹ۔",
+    },
+    date: "2026-06-25",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "حدد المسار والوجهة", paragraphs: ["النقل لمسافة طويلة يحتاج عنوان استلام وتسليم واضحين. أرسل المدينة، الحي، وأقرب معلم في كل نقطة قبل تأكيد السعر.", "إذا كانت الرحلة بين جدة ومكة أو إلى مدينة أخرى، اتفق على وقت مناسب للطريق."] },
+        { heading: "جهز السيارة", paragraphs: ["أخرج الأغراض المهمة، صور حالة السيارة، وتأكد من وجود مفتاح السيارة. إذا كانت السيارة لا تعمل، اذكر ذلك قبل التحرك.", "كلما كانت التفاصيل جاهزة، أصبح النقل أسرع وأكثر تنظيماً."] },
+      ],
+      en: [
+        { heading: "Confirm route and destination", paragraphs: ["Long-distance transport needs clear pickup and delivery addresses. Send city, district, and nearest landmark for both points before confirming price.", "If the trip is between Jeddah and Makkah or another city, agree on suitable road timing."] },
+        { heading: "Prepare the car", paragraphs: ["Remove important items, photograph vehicle condition, and make sure the key is available. If the car does not run, mention it before dispatch.", "The more details are ready, the smoother the transport."] },
+      ],
+      ur: [
+        { heading: "راستہ اور منزل کنفرم کریں", paragraphs: ["لمبے فاصلے کی منتقلی کے لیے پک اپ اور ڈلیوری ایڈریس واضح ہونے چاہئیں۔ قیمت کنفرم کرنے سے پہلے شہر، علاقہ اور قریبی نشان دونوں جگہوں کے لیے بھیجیں۔", "اگر سفر جدہ اور مکہ یا کسی دوسرے شہر کے درمیان ہے تو مناسب وقت طے کریں۔"] },
+        { heading: "گاڑی تیار کریں", paragraphs: ["ضروری سامان نکالیں، گاڑی کی حالت کی تصاویر لیں، اور چابی موجود رکھیں۔ اگر گاڑی اسٹارٹ نہیں ہوتی تو پہلے بتائیں۔", "تفصیلات تیار ہوں تو منتقلی زیادہ منظم ہوتی ہے۔"] },
+      ],
+    },
+  },
+  {
+    slug: "used-car-pickup-jeddah-market",
+    image: "/images/articles/used-car-pickup-jeddah-market.webp",
+    category: { ar: "شراء سيارة", en: "Car Purchase", ur: "کار خریداری" },
+    title: {
+      ar: "نقل سيارة مشتراة من معرض أو حراج في جدة",
+      en: "Transporting a Purchased Car from a Jeddah Showroom or Market",
+      ur: "جدہ شو روم یا مارکیٹ سے خریدی گئی گاڑی منتقل کرنا",
+    },
+    excerpt: {
+      ar: "كيف تنسق استلام سيارة جديدة أو مستعملة ونقلها إلى المنزل أو الورشة.",
+      en: "How to coordinate pickup for a new or used car and move it home or to a workshop.",
+      ur: "نئی یا استعمال شدہ گاڑی کو گھر یا ورکشاپ تک منتقل کرنے کا طریقہ۔",
+    },
+    date: "2026-06-26",
+    readTime: 4,
+    content: {
+      ar: [
+        { heading: "نسق مع البائع", paragraphs: ["إذا اشتريت سيارة من معرض أو حراج، اتفق مع البائع على وقت استلام واضح ومكان يمكن للسطحة الوقوف فيه. أرسل اسم المعرض أو اللوكيشن مباشرة.", "إذا كانت السيارة غير مفحوصة أو تحتاج ورشة، فالسطحة خيار أكثر أماناً من قيادتها فوراً."] },
+        { heading: "قبل التسليم", paragraphs: ["تأكد من المفاتيح والأوراق المهمة، وحدد هل الوجهة منزل أو ورشة أو معرض آخر. هذه التفاصيل تمنع التأخير عند الاستلام.", "التواصل عبر واتساب يجعل مشاركة الموقع والوقت أسهل."] },
+      ],
+      en: [
+        { heading: "Coordinate with the seller", paragraphs: ["If you bought a car from a showroom or market, agree with the seller on a clear pickup time and a place where the flatbed can stop. Send the showroom name or location directly.", "If the car has not been inspected or needs a workshop, flatbed transport is safer than driving it immediately."] },
+        { heading: "Before handover", paragraphs: ["Confirm keys and important papers, and decide whether the destination is home, workshop, or another showroom. These details prevent pickup delays.", "WhatsApp makes sharing location and timing easier."] },
+      ],
+      ur: [
+        { heading: "بیچنے والے سے رابطہ کریں", paragraphs: ["اگر گاڑی شو روم یا مارکیٹ سے خریدی ہے تو بیچنے والے کے ساتھ واضح پک اپ وقت اور ایسی جگہ طے کریں جہاں فلیٹ بیڈ رک سکے۔ شو روم کا نام یا لوکیشن بھیجیں۔", "اگر گاڑی چیک نہیں ہوئی یا ورکشاپ چاہیے تو فوراً ڈرائیو کرنے کے بجائے فلیٹ بیڈ بہتر ہے۔"] },
+        { heading: "حوالگی سے پہلے", paragraphs: ["چابیاں اور ضروری کاغذات کنفرم کریں، اور طے کریں منزل گھر، ورکشاپ یا دوسرا شو روم ہے۔ یہ تفصیلات تاخیر کم کرتی ہیں۔", "واٹس ایپ سے لوکیشن اور وقت شیئر کرنا آسان ہوتا ہے۔"] },
+      ],
+    },
+  },
+  {
+    slug: "weekend-holiday-car-towing-jeddah",
+    image: "/images/articles/weekend-holiday-car-towing-jeddah.webp",
+    category: { ar: "عطلات", en: "Weekend Help", ur: "ویک اینڈ" },
+    title: {
+      ar: "سطحة في الويكند والعطلات داخل جدة ومكة",
+      en: "Weekend and Holiday Car Towing in Jeddah and Makkah",
+      ur: "جدہ اور مکہ میں ویک اینڈ اور چھٹی کے دن سطحة",
+    },
+    excerpt: {
+      ar: "نصائح للحجز السريع عندما تتعطل السيارة في وقت مزدحم أو خارج ساعات العمل المعتادة.",
+      en: "Booking tips when your car breaks down during busy times or outside normal hours.",
+      ur: "مصروف وقت یا عام اوقات کے بعد گاڑی خراب ہو تو بکنگ کے مشورے۔",
+    },
+    date: "2026-06-28",
+    readTime: 4,
+    content: {
+      ar: [
+        { heading: "لماذا التفاصيل مهمة في العطلات؟", paragraphs: ["في الويكند والعطلات قد تكون الطرق مزدحمة، لذلك أرسل الموقع والوجهة ونوع السيارة في أول رسالة. هذا يساعد على الرد السريع وتحديد وقت الوصول.", "اذكر إذا كنت في مول أو كورنيش أو طريق سريع لأن نقاط الاستلام تختلف."] },
+        { heading: "اختر نقطة واضحة", paragraphs: ["اختر نقطة يمكن للسائق الوصول إليها بأمان. إذا كان المكان مزدحماً، أرسل أقرب بوابة أو مخرج أو معلم واضح.", "التنسيق المبكر يجعل النقل أقل توتراً لك وللسائق."] },
+      ],
+      en: [
+        { heading: "Why details matter on holidays", paragraphs: ["During weekends and holidays, roads may be busy, so send location, destination, and car type in the first message. This helps with faster replies and arrival estimates.", "Mention if you are at a mall, corniche, or highway because pickup points differ."] },
+        { heading: "Choose a clear point", paragraphs: ["Choose a point the driver can reach safely. If the area is crowded, send the nearest gate, exit, or landmark.", "Early coordination makes transport less stressful for you and the driver."] },
+      ],
+      ur: [
+        { heading: "چھٹیوں میں تفصیلات کیوں اہم ہیں؟", paragraphs: ["ویک اینڈ اور چھٹیوں میں راستے مصروف ہو سکتے ہیں، اس لیے پہلی میسج میں لوکیشن، منزل اور گاڑی کی قسم بھیجیں۔ اس سے جواب اور وقت جلد واضح ہوتا ہے۔", "اگر مال، کورنیش یا ہائی وے پر ہیں تو بتائیں کیونکہ پک اپ پوائنٹ مختلف ہوتا ہے۔"] },
+        { heading: "واضح جگہ منتخب کریں", paragraphs: ["ایسی جگہ منتخب کریں جہاں ڈرائیور محفوظ طریقے سے پہنچ سکے۔ اگر علاقہ مصروف ہے تو قریبی گیٹ، ایگزٹ یا نشان بھیجیں۔", "پہلے سے رابطہ منتقلی کو کم پریشان کن بناتا ہے۔"] },
+      ],
+    },
+  },
+  {
+    slug: "prepare-car-before-staha-arrives",
+    image: "/images/articles/prepare-car-before-staha-arrives.webp",
+    category: { ar: "تجهيز", en: "Preparation", ur: "تیاری" },
+    title: {
+      ar: "قبل وصول السطحة: 7 أشياء جهزها بسرعة",
+      en: "Before the Flatbed Arrives: 7 Things to Prepare",
+      ur: "فلیٹ بیڈ آنے سے پہلے: 7 چیزیں تیار کریں",
+    },
+    excerpt: {
+      ar: "قائمة عملية تساعدك على تجهيز السيارة والموقع قبل تحميلها على السطحة.",
+      en: "A practical checklist to prepare the car and pickup point before loading.",
+      ur: "لوڈنگ سے پہلے گاڑی اور پک اپ پوائنٹ تیار کرنے کی عملی فہرست۔",
+    },
+    date: "2026-06-29",
+    readTime: 5,
+    content: {
+      ar: [
+        { heading: "القائمة السريعة", paragraphs: ["جهز مفتاح السيارة، أخرج الأغراض المهمة، صور حالة السيارة، أرسل الموقع، حدد الوجهة، اذكر حالة السيارة، واختر نقطة وقوف آمنة للسطحة.", "هذه الخطوات البسيطة توفر وقتاً عند وصول السائق وتقلل سوء الفهم."] },
+        { heading: "إذا كانت السيارة لا تعمل", paragraphs: ["أخبر السائق إذا كانت السيارة لا تدخل وضع الحياد أو إذا كانت العجلات لا تتحرك. لا تحاول دفع السيارة في مكان غير آمن.", "التفاصيل المبكرة تساعد في اختيار طريقة التحميل المناسبة."] },
+      ],
+      en: [
+        { heading: "The quick checklist", paragraphs: ["Prepare the car key, remove important items, photograph vehicle condition, send location, confirm destination, mention car condition, and choose a safe stopping point for the flatbed.", "These simple steps save time when the driver arrives and reduce misunderstandings."] },
+        { heading: "If the car does not move", paragraphs: ["Tell the driver if the car cannot enter neutral or if the wheels do not roll. Do not push the car in an unsafe place.", "Early details help choose the right loading method."] },
+      ],
+      ur: [
+        { heading: "فوری چیک لسٹ", paragraphs: ["گاڑی کی چابی تیار رکھیں، ضروری سامان نکالیں، گاڑی کی حالت کی تصاویر لیں، لوکیشن بھیجیں، منزل کنفرم کریں، گاڑی کی حالت بتائیں، اور فلیٹ بیڈ کے لیے محفوظ رکنے کی جگہ منتخب کریں۔", "یہ آسان اقدامات ڈرائیور کے آنے پر وقت بچاتے ہیں اور غلط فہمی کم کرتے ہیں۔"] },
+        { heading: "اگر گاڑی حرکت نہیں کرتی", paragraphs: ["ڈرائیور کو بتائیں اگر گاڑی نیوٹرل نہیں ہوتی یا پہیے نہیں گھومتے۔ غیر محفوظ جگہ پر گاڑی دھکیلنے کی کوشش نہ کریں۔", "ابتدائی معلومات مناسب لوڈنگ طریقہ منتخب کرنے میں مدد دیتی ہیں۔"] },
       ],
     },
   },

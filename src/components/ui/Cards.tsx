@@ -33,8 +33,8 @@ export function BlogCard({ post, locale }: { post: (typeof posts)[number]; local
       <Image
         src={post.image}
         alt={post.title[locale]}
-        width={640}
-        height={420}
+        width={1672}
+        height={941}
         sizes="(max-width: 720px) 100vw, (max-width: 980px) 50vw, 33vw"
       />
       <div>
